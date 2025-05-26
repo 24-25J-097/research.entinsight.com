@@ -247,6 +247,15 @@ html {
     animation: gradient-shift 5s ease infinite;
 }
 
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    transform: translateY(-5px);
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .glass-card, .glass {
@@ -256,5 +265,13 @@ html {
 
     .blur-3xl {
         filter: blur(32px);
+    }
+
+    /* Adjust scroll to top button size on mobile */
+    #scrollToTopBtn {
+        bottom: 1rem;
+        right: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
