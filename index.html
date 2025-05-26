@@ -161,21 +161,27 @@
         </section>
 
         <!-- Domain Introduction -->
-        <section class="py-20 bg-white" id="domain">
-            <div class="container mx-auto px-6">
+        <section class="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-100 relative overflow-hidden" id="domain">
+            <!-- Background decorative elements -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute top-40 left-20 w-72 h-72 bg-blue-200/20 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 right-20 w-64 h-64 bg-blue-300/20 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
                 <div class="fade-in">
-                    <h2 class="text-4xl font-bold text-center text-medical-dark-blue mb-16">
+                    <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent mb-16">
                         ENT Domain Overview
                     </h2>
                     <div class="grid md:grid-cols-2 gap-12 items-center">
-                        <div>
+                        <div class="animate-float">
                             <img
-                                    alt="ENT Medical Imaging"
-                                    class="rounded-lg shadow-lg hover-scale"
-                                    src="assets/images/ent.png"
+                                alt="ENT Medical Imaging"
+                                class="rounded-xl shadow-lg hover-scale glow-border"
+                                src="assets/images/ent.png"
                             />
                         </div>
-                        <div>
+                        <div class="glass-card rounded-xl p-8 hover-glow">
                             <p class="text-lg text-gray-700 leading-relaxed mb-6">
                                 Over the past few decades, the healthcare sector has adopted software solutions for managing
                                 patient records and medical imaging, significantly improving diagnostic processes. More
@@ -194,23 +200,31 @@
         </section>
 
         <!-- Disease Explanations -->
-        <section class="py-20 bg-medical-light-blue">
-            <div class="container mx-auto px-6">
+        <section class="py-20 bg-gradient-to-tr from-blue-100 via-white to-blue-50 relative overflow-hidden">
+            <!-- Background decorative elements -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute top-20 right-40 w-80 h-80 bg-blue-200/20 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-20 -left-20 w-72 h-72 bg-blue-300/20 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
                 <div class="fade-in">
-                    <h2 class="text-4xl font-bold text-center text-medical-dark-blue mb-16">
+                    <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-blue-800 via-blue-600 to-blue-500 bg-clip-text text-transparent mb-16">
                         Medical Conditions We Address
                     </h2>
                     <div class="grid md:grid-cols-2 gap-12">
                         <!-- Foreign Objects -->
-                        <div class="bg-white rounded-lg p-8 shadow-lg hover-scale">
+                        <div class="glass-card rounded-xl p-8 hover-glow transition-all">
                             <div class="flex items-center mb-6">
-                                <i class="fas fa-search text-3xl text-medical-blue mr-4"></i>
-                                <h3 class="text-2xl font-bold text-medical-dark-blue">Foreign Objects in Throat</h3>
+                                <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
+                                    <i class="fas fa-search text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Foreign Objects in Throat</h3>
                             </div>
                             <img
-                                    alt="Foreign Objects X-Ray"
-                                    class="rounded-lg mb-4 w-full"
-                                    src="assets/images/foreign.jpg"
+                                alt="Foreign Objects X-Ray"
+                                class="rounded-xl mb-4 w-full shadow-lg hover-scale"
+                                src="assets/images/foreign.jpg"
                             />
                             <p class="text-gray-700 mb-4">
                                 Animal bones (as food), metallic objects (safety pins, needles), and biomedical foreign objects
@@ -222,15 +236,17 @@
                         </div>
 
                         <!-- Sinusitis -->
-                        <div class="bg-white rounded-lg p-8 shadow-lg hover-scale">
+                        <div class="glass-card rounded-xl p-8 hover-glow transition-all">
                             <div class="flex items-center mb-6">
-                                <i class="fas fa-head-side-mask text-3xl text-medical-blue mr-4"></i>
-                                <h3 class="text-2xl font-bold text-medical-dark-blue">Sinusitis</h3>
+                                <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
+                                    <i class="fas fa-head-side-mask text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Sinusitis</h3>
                             </div>
                             <img
-                                    alt="Sinusitis X-Ray"
-                                    class="rounded-lg mb-4 w-full"
-                                    src="assets/images/sinusitis.png"
+                                alt="Sinusitis X-Ray"
+                                class="rounded-xl mb-4 w-full shadow-lg hover-scale"
+                                src="assets/images/sinusitis.png"
                             />
                             <p class="text-gray-700 mb-4">
                                 Sinusitis is the inflammation of the sinus tissue, caused by infections or allergies.
@@ -241,15 +257,17 @@
                         </div>
 
                         <!-- Cholesteatoma -->
-                        <div class="bg-white rounded-lg p-8 shadow-lg hover-scale">
+                        <div class="glass-card rounded-xl p-8 hover-glow transition-all">
                             <div class="flex items-center mb-6">
-                                <i class="fas fa-ear-deaf text-3xl text-medical-blue mr-4"></i>
-                                <h3 class="text-2xl font-bold text-medical-dark-blue">Cholesteatoma</h3>
+                                <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
+                                    <i class="fas fa-ear-deaf text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Cholesteatoma</h3>
                             </div>
                             <img
-                                    alt="Cholesteatoma Image"
-                                    class="rounded-lg mb-4 w-full"
-                                    src="assets/images/cholesteotoma.png"
+                                alt="Cholesteatoma Image"
+                                class="rounded-xl mb-4 w-full shadow-lg hover-scale"
+                                src="assets/images/cholesteotoma.png"
                             />
                             <p class="text-gray-700 mb-4">
                                 Cholesteatoma is a destructive and expanding growth of keratinizing squamous epithelium in the
@@ -262,12 +280,14 @@
                         </div>
 
                         <!-- Pharyngitis -->
-                        <div class="bg-white rounded-lg p-8 shadow-lg hover-scale">
+                        <div class="glass-card rounded-xl p-8 hover-glow transition-all">
                             <div class="flex items-center mb-6">
-                                <i class="fas fa-throat text-3xl text-medical-blue mr-4"></i>
-                                <h3 class="text-2xl font-bold text-medical-dark-blue">Pharyngitis</h3>
+                                <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
+                                    <i class="fas fa-throat text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Pharyngitis</h3>
                             </div>
-                            <img alt="Pharyngitis Image" class="rounded-lg mb-4 w-full"
+                            <img alt="Pharyngitis Image" class="rounded-xl mb-4 w-full shadow-lg hover-scale"
                                  src="assets/images/phyrangitis.png">
                             <p class="text-gray-700 mb-4">
                                 Pharyngitis is an inflammation of the pharynx, often caused by viral or bacterial infections.
@@ -284,29 +304,41 @@
         </section>
 
         <!-- Research Gap -->
-        <section class="py-20 bg-white" id="research">
-            <div class="container mx-auto px-6">
+        <section class="py-20 bg-gradient-to-bl from-blue-50 via-white to-blue-100 relative overflow-hidden" id="research">
+            <!-- Background decorative elements -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute top-0 left-1/4 w-64 h-64 bg-blue-200/20 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-blue-300/20 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
                 <div class="fade-in">
-                    <h2 class="text-4xl font-bold text-center text-medical-dark-blue mb-16">
+                    <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent mb-16">
                         Research Gaps Identified
                     </h2>
                     <div class="max-w-4xl mx-auto">
                         <div class="grid md:grid-cols-3 gap-8">
-                            <div class="text-center p-6 bg-red-50 rounded-lg">
-                                <i class="fas fa-exclamation-triangle text-4xl text-red-500 mb-4"></i>
-                                <h3 class="text-xl font-bold text-red-700 mb-4">Lack of Software Solutions</h3>
+                            <div class="glass-card text-center p-8 rounded-xl hover-glow animate-float" style="animation-delay: 0s;">
+                                <div class="w-16 h-16 mx-auto rounded-full bg-gradient-to-r from-red-500 to-red-600 flex items-center justify-center text-white mb-6 glow animate-glow-pulse">
+                                    <i class="fas fa-exclamation-triangle text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-red-600 mb-4 glow-text">Lack of Software Solutions</h3>
                                 <p class="text-gray-700">In existing research, there was no consideration for creating
                                     comprehensive software solutions.</p>
                             </div>
-                            <div class="text-center p-6 bg-orange-50 rounded-lg">
-                                <i class="fas fa-clock text-4xl text-orange-500 mb-4"></i>
-                                <h3 class="text-xl font-bold text-orange-700 mb-4">Outdated Methods</h3>
+                            <div class="glass-card text-center p-8 rounded-xl hover-glow animate-float" style="animation-delay: 0.5s;">
+                                <div class="w-16 h-16 mx-auto rounded-full bg-gradient-to-r from-orange-400 to-orange-600 flex items-center justify-center text-white mb-6 glow animate-glow-pulse">
+                                    <i class="fas fa-clock text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-orange-600 mb-4 glow-text">Outdated Methods</h3>
                                 <p class="text-gray-700">Existing research was somewhat outdated. There are new deep learning
                                     technologies that can be used for this line of work.</p>
                             </div>
-                            <div class="text-center p-6 bg-yellow-50 rounded-lg">
-                                <i class="fas fa-chart-line text-4xl text-yellow-600 mb-4"></i>
-                                <h3 class="text-xl font-bold text-yellow-700 mb-4">Limited Model Evaluation</h3>
+                            <div class="glass-card text-center p-8 rounded-xl hover-glow animate-float" style="animation-delay: 1s;">
+                                <div class="w-16 h-16 mx-auto rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 flex items-center justify-center text-white mb-6 glow animate-glow-pulse">
+                                    <i class="fas fa-chart-line text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-yellow-600 mb-4 glow-text">Limited Model Evaluation</h3>
                                 <p class="text-gray-700">Different types of models or state-of-the-art models were not
                                     considered in previous studies.</p>
                             </div>
@@ -317,24 +349,40 @@
         </section>
 
         <!-- Problem and Solution -->
-        <section class="py-20 bg-medical-light-blue">
-            <div class="container mx-auto px-6">
+        <section class="py-20 bg-gradient-to-r from-blue-50 via-white to-blue-100 relative overflow-hidden">
+            <!-- Background decorative elements -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute top-1/3 left-10 w-80 h-80 bg-blue-200/20 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-1/3 right-10 w-80 h-80 bg-blue-300/20 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
                 <div class="fade-in">
-                    <h2 class="text-4xl font-bold text-center text-medical-dark-blue mb-16">
+                    <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent mb-16">
                         Research Problem & Solution
                     </h2>
                     <div class="max-w-4xl mx-auto">
-                        <div class="bg-white rounded-lg p-8 shadow-lg mb-12">
-                            <h3 class="text-2xl font-bold text-medical-dark-blue mb-6">Research Question</h3>
+                        <div class="glass-card rounded-xl p-8 hover-glow mb-12 border border-blue-200/50">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
+                                    <i class="fas fa-question text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Research Question</h3>
+                            </div>
                             <p class="text-lg text-gray-700 leading-relaxed">
                                 How to create a Web/Mobile based software solution to be used in E.N.T clinical environment
                                 which can be used for identifying medical conditions from certain medical images?
                             </p>
                         </div>
                         <div class="text-center">
-                            <h3 class="text-2xl font-bold text-medical-dark-blue mb-6">Solution Demo</h3>
-                            <div class="bg-white rounded-lg p-8 shadow-lg">
-                                <video class="w-full max-w-2xl mx-auto rounded-lg" controls>
+                            <div class="flex items-center justify-center mb-6">
+                                <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow animate-glow-pulse">
+                                    <i class="fas fa-lightbulb text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Solution Demo</h3>
+                            </div>
+                            <div class="glass-card rounded-xl p-8 hover-glow border border-blue-200/50">
+                                <video class="w-full max-w-2xl mx-auto rounded-xl shadow-lg" controls>
                                     <source src="assets/videos/24-25J-097.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
@@ -346,20 +394,33 @@
         </section>
 
         <!-- Methodology -->
-        <section class="py-20 bg-white" id="methodology">
-            <div class="container mx-auto px-6">
+        <section class="py-20 bg-gradient-to-tl from-blue-50 via-white to-blue-100 relative overflow-hidden" id="methodology">
+            <!-- Background decorative elements -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute top-20 right-20 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 left-20 w-80 h-80 bg-blue-300/20 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
                 <div class="fade-in">
-                    <h2 class="text-4xl font-bold text-center text-medical-dark-blue mb-16">
+                    <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent mb-16">
                         System Architecture & Methodology
                     </h2>
                     <div class="max-w-6xl mx-auto">
-                        <div class="text-center mb-12">
-                            <img alt="System Architecture Diagram" class="rounded-lg shadow-lg mx-auto"
-                                 src="assets/images/system_diagram.png">
+                        <div class="text-center mb-12 animate-float">
+                            <div class="glass-card p-6 rounded-xl hover-glow inline-block">
+                                <img alt="System Architecture Diagram" class="rounded-xl shadow-lg mx-auto glow-border"
+                                     src="assets/images/system_diagram.png">
+                            </div>
                         </div>
                         <div class="grid md:grid-cols-2 gap-12">
-                            <div>
-                                <h3 class="text-2xl font-bold text-medical-dark-blue mb-6">System Overview</h3>
+                            <div class="glass-card rounded-xl p-8 hover-glow">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
+                                        <i class="fas fa-project-diagram text-2xl"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">System Overview</h3>
+                                </div>
                                 <p class="text-gray-700 leading-relaxed mb-6">
                                     The system architecture diagram shows the overall design of the proposed medical imaging
                                     application, which includes four sub-modules for detecting and diagnosing Cholesteatoma,
@@ -371,29 +432,40 @@
                                     access patient data.
                                 </p>
                             </div>
-                            <div>
-                                <h3 class="text-2xl font-bold text-medical-dark-blue mb-6">Technical Implementation</h3>
-                                <div class="space-y-4">
+                            <div class="glass-card rounded-xl p-8 hover-glow">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
+                                        <i class="fas fa-code text-2xl"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Technical Implementation</h3>
+                                </div>
+                                <div class="space-y-6">
                                     <div class="flex items-start">
-                                        <i class="fas fa-server text-medical-blue mr-3 mt-1"></i>
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white mr-4">
+                                            <i class="fas fa-server text-lg"></i>
+                                        </div>
                                         <div>
-                                            <h4 class="font-semibold text-gray-800">Backend Architecture</h4>
+                                            <h4 class="font-semibold text-blue-700">Backend Architecture</h4>
                                             <p class="text-gray-600">NodeJS-based REST API with Flask server for deep learning
                                                 analysis</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start">
-                                        <i class="fas fa-brain text-medical-blue mr-3 mt-1"></i>
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white mr-4">
+                                            <i class="fas fa-brain text-lg"></i>
+                                        </div>
                                         <div>
-                                            <h4 class="font-semibold text-gray-800">AI Models</h4>
+                                            <h4 class="font-semibold text-blue-700">AI Models</h4>
                                             <p class="text-gray-600">CNN models including ResNet50, VGG16, InceptionV3, and
                                                 YOLO</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start">
-                                        <i class="fas fa-mobile-alt text-medical-blue mr-3 mt-1"></i>
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white mr-4">
+                                            <i class="fas fa-mobile-alt text-lg"></i>
+                                        </div>
                                         <div>
-                                            <h4 class="font-semibold text-gray-800">Multi-Platform</h4>
+                                            <h4 class="font-semibold text-blue-700">Multi-Platform</h4>
                                             <p class="text-gray-600">Web and mobile interfaces for comprehensive
                                                 accessibility</p>
                                         </div>
@@ -407,47 +479,64 @@
         </section>
 
         <!-- Milestones -->
-        <section class="py-20 bg-medical-light-blue" id="milestones">
-            <div class="container mx-auto px-6">
+        <section class="py-20 bg-gradient-to-br from-blue-100 via-white to-blue-50 relative overflow-hidden" id="milestones">
+            <!-- Background decorative elements -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-200/20 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-72 h-72 bg-blue-300/20 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
                 <div class="fade-in">
-                    <h2 class="text-4xl font-bold text-center text-medical-dark-blue mb-16">
+                    <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent mb-16">
                         Project Milestones
                     </h2>
                     <div class="max-w-4xl mx-auto">
                         <div class="space-y-8">
-                            <div class="flex items-center bg-white rounded-lg p-6 shadow-lg hover-scale">
-                                <div class="bg-medical-blue text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-6">
+                            <!-- Milestone 1 -->
+                            <div class="glass-card rounded-xl p-6 hover-glow transition-all flex items-center relative overflow-hidden">
+                                <!-- Decorative line connecting milestones -->
+                                <div class="absolute left-[2.5rem] top-full w-1 h-8 bg-gradient-to-b from-blue-500 to-transparent z-0"></div>
+
+                                <div class="bg-gradient-blue text-white rounded-full w-14 h-14 flex items-center justify-center font-bold mr-6 glow animate-glow-pulse z-10">
                                     1
                                 </div>
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-bold text-medical-dark-blue">Project Proposal</h3>
+                                    <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Project Proposal</h3>
                                     <p class="text-gray-600">Initial research proposal and literature review</p>
                                 </div>
-                                <div class="text-medical-blue font-semibold">
+                                <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full font-semibold">
                                     Completed
                                 </div>
                             </div>
-                            <div class="flex items-center bg-white rounded-lg p-6 shadow-lg hover-scale">
-                                <div class="bg-medical-blue text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-6">
+
+                            <!-- Milestone 2 -->
+                            <div class="glass-card rounded-xl p-6 hover-glow transition-all flex items-center relative overflow-hidden">
+                                <!-- Decorative line connecting milestones -->
+                                <div class="absolute left-[2.5rem] top-full w-1 h-8 bg-gradient-to-b from-blue-500 to-transparent z-0"></div>
+
+                                <div class="bg-gradient-blue text-white rounded-full w-14 h-14 flex items-center justify-center font-bold mr-6 glow animate-glow-pulse z-10">
                                     2
                                 </div>
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-bold text-medical-dark-blue">Progress Presentation</h3>
+                                    <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Progress Presentation</h3>
                                     <p class="text-gray-600">System design and initial implementation</p>
                                 </div>
-                                <div class="text-medical-blue font-semibold">
+                                <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full font-semibold">
                                     Completed
                                 </div>
                             </div>
-                            <div class="flex items-center bg-white rounded-lg p-6 shadow-lg hover-scale">
-                                <div class="bg-medical-green text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-6">
+
+                            <!-- Milestone 3 -->
+                            <div class="glass-card rounded-xl p-6 hover-glow transition-all flex items-center">
+                                <div class="bg-gradient-to-r from-green-400 to-green-600 text-white rounded-full w-14 h-14 flex items-center justify-center font-bold mr-6 glow animate-glow-pulse">
                                     3
                                 </div>
                                 <div class="flex-1">
-                                    <h3 class="text-xl font-bold text-medical-dark-blue">Final Presentation</h3>
+                                    <h3 class="text-xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent">Final Presentation</h3>
                                     <p class="text-gray-600">Complete system demonstration and evaluation</p>
                                 </div>
-                                <div class="text-medical-green font-semibold">
+                                <div class="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full font-semibold">
                                     In Progress
                                 </div>
                             </div>
@@ -458,67 +547,95 @@
         </section>
 
         <!-- Documents & Presentations -->
-        <section class="py-20 bg-white">
-            <div class="container mx-auto px-6">
+        <section class="py-20 bg-gradient-to-tr from-blue-50 via-white to-blue-100 relative overflow-hidden">
+            <!-- Background decorative elements -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute top-1/3 right-10 w-80 h-80 bg-blue-200/20 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-1/3 left-10 w-80 h-80 bg-blue-300/20 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
                 <div class="fade-in">
-                    <h2 class="text-4xl font-bold text-center text-medical-dark-blue mb-16">
+                    <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent mb-16">
                         Documents & Presentations
                     </h2>
                     <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-                        <div>
-                            <h3 class="text-2xl font-bold text-medical-dark-blue mb-6">Documents</h3>
+                        <div class="glass-card rounded-xl p-8 hover-glow">
+                            <div class="flex items-center mb-8">
+                                <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
+                                    <i class="fas fa-file-alt text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Documents</h3>
+                            </div>
                             <div class="space-y-4">
-                                <a class="flex items-center p-4 bg-medical-light-blue rounded-lg hover:bg-medical-blue hover:text-white transition-colors"
+                                <a class="flex items-center p-4 glass rounded-lg hover-glow transition-all border border-blue-200/30"
                                    href="#">
-                                    <i class="fas fa-file-pdf text-2xl mr-4"></i>
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-red-400 to-red-600 flex items-center justify-center text-white mr-4">
+                                        <i class="fas fa-file-pdf text-lg"></i>
+                                    </div>
                                     <div>
-                                        <h4 class="font-semibold">Project Proposal</h4>
-                                        <p class="text-sm opacity-75">Initial research proposal document</p>
+                                        <h4 class="font-semibold text-blue-800">Project Proposal</h4>
+                                        <p class="text-sm text-gray-600">Initial research proposal document</p>
                                     </div>
                                 </a>
-                                <a class="flex items-center p-4 bg-medical-light-blue rounded-lg hover:bg-medical-blue hover:text-white transition-colors"
+                                <a class="flex items-center p-4 glass rounded-lg hover-glow transition-all border border-blue-200/30"
                                    href="#">
-                                    <i class="fas fa-file-pdf text-2xl mr-4"></i>
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white mr-4">
+                                        <i class="fas fa-file-pdf text-lg"></i>
+                                    </div>
                                     <div>
-                                        <h4 class="font-semibold">Literature Review</h4>
-                                        <p class="text-sm opacity-75">Comprehensive literature analysis</p>
+                                        <h4 class="font-semibold text-blue-800">Literature Review</h4>
+                                        <p class="text-sm text-gray-600">Comprehensive literature analysis</p>
                                     </div>
                                 </a>
-                                <a class="flex items-center p-4 bg-medical-light-blue rounded-lg hover:bg-medical-blue hover:text-white transition-colors"
+                                <a class="flex items-center p-4 glass rounded-lg hover-glow transition-all border border-blue-200/30"
                                    href="#">
-                                    <i class="fas fa-file-pdf text-2xl mr-4"></i>
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-green-400 to-green-600 flex items-center justify-center text-white mr-4">
+                                        <i class="fas fa-file-pdf text-lg"></i>
+                                    </div>
                                     <div>
-                                        <h4 class="font-semibold">Final Report</h4>
-                                        <p class="text-sm opacity-75">Complete project documentation</p>
+                                        <h4 class="font-semibold text-blue-800">Final Report</h4>
+                                        <p class="text-sm text-gray-600">Complete project documentation</p>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-medical-dark-blue mb-6">Presentations</h3>
+                        <div class="glass-card rounded-xl p-8 hover-glow">
+                            <div class="flex items-center mb-8">
+                                <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
+                                    <i class="fas fa-desktop text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Presentations</h3>
+                            </div>
                             <div class="space-y-4">
-                                <a class="flex items-center p-4 bg-medical-light-blue rounded-lg hover:bg-medical-blue hover:text-white transition-colors"
+                                <a class="flex items-center p-4 glass rounded-lg hover-glow transition-all border border-blue-200/30"
                                    href="#">
-                                    <i class="fas fa-presentation text-2xl mr-4"></i>
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 flex items-center justify-center text-white mr-4">
+                                        <i class="fas fa-presentation text-lg"></i>
+                                    </div>
                                     <div>
-                                        <h4 class="font-semibold">Proposal Presentation</h4>
-                                        <p class="text-sm opacity-75">Initial project presentation</p>
+                                        <h4 class="font-semibold text-blue-800">Proposal Presentation</h4>
+                                        <p class="text-sm text-gray-600">Initial project presentation</p>
                                     </div>
                                 </a>
-                                <a class="flex items-center p-4 bg-medical-light-blue rounded-lg hover:bg-medical-blue hover:text-white transition-colors"
+                                <a class="flex items-center p-4 glass rounded-lg hover-glow transition-all border border-blue-200/30"
                                    href="#">
-                                    <i class="fas fa-presentation text-2xl mr-4"></i>
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 flex items-center justify-center text-white mr-4">
+                                        <i class="fas fa-presentation text-lg"></i>
+                                    </div>
                                     <div>
-                                        <h4 class="font-semibold">Progress Presentation</h4>
-                                        <p class="text-sm opacity-75">Mid-project progress update</p>
+                                        <h4 class="font-semibold text-blue-800">Progress Presentation</h4>
+                                        <p class="text-sm text-gray-600">Mid-project progress update</p>
                                     </div>
                                 </a>
-                                <a class="flex items-center p-4 bg-medical-light-blue rounded-lg hover:bg-medical-blue hover:text-white transition-colors"
+                                <a class="flex items-center p-4 glass rounded-lg hover-glow transition-all border border-blue-200/30"
                                    href="#">
-                                    <i class="fas fa-presentation text-2xl mr-4"></i>
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center text-white mr-4">
+                                        <i class="fas fa-presentation text-lg"></i>
+                                    </div>
                                     <div>
-                                        <h4 class="font-semibold">Final Presentation</h4>
-                                        <p class="text-sm opacity-75">Complete project demonstration</p>
+                                        <h4 class="font-semibold text-blue-800">Final Presentation</h4>
+                                        <p class="text-sm text-gray-600">Complete project demonstration</p>
                                     </div>
                                 </a>
                             </div>
@@ -529,87 +646,114 @@
         </section>
 
         <!-- Team Section -->
-        <section class="py-20 bg-medical-light-blue" id="team">
-            <div class="container mx-auto px-6">
+        <section class="py-20 bg-gradient-to-bl from-blue-50 via-white to-blue-100 relative overflow-hidden" id="team">
+            <!-- Background decorative elements -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute top-20 left-20 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 right-20 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
                 <div class="fade-in">
-                    <h2 class="text-4xl font-bold text-center text-medical-dark-blue mb-16">
+                    <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent mb-16">
                         Our Team
                     </h2>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                         <!-- Students -->
-                        <div class="bg-white rounded-lg p-6 shadow-lg text-center hover-scale">
-                            <img alt="Pasan Baddewithana" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                                 src="assets/images/pasan.jpg">
-                            <h3 class="text-xl font-bold text-medical-dark-blue mb-2">Pasan Baddewithana</h3>
-                            <p class="text-gray-600 mb-2">Student</p>
+                        <div class="glass-card rounded-xl p-8 text-center hover-glow transition-all">
+                            <div class="relative mx-auto w-28 h-28 mb-6">
+                                <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 blur-sm animate-glow-pulse"></div>
+                                <img alt="Pasan Baddewithana" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white"
+                                     src="assets/images/pasan.jpg">
+                            </div>
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Pasan Baddewithana</h3>
+                            <p class="text-blue-700 font-medium mb-2">Student</p>
                             <p class="text-sm text-gray-500 mb-4">it21247804@my.sliit.lk</p>
-                            <a class="text-medical-blue hover:text-medical-dark-blue" href="#">
-                                <i class="fab fa-linkedin text-2xl"></i>
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition-all" href="#">
+                                <i class="fab fa-linkedin text-xl"></i>
                             </a>
                         </div>
 
-                        <div class="bg-white rounded-lg p-6 shadow-lg text-center hover-scale">
-                            <img alt="Navod Fonseka" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                                 src="assets/images/navod.png">
-                            <h3 class="text-xl font-bold text-medical-dark-blue mb-2">Navod Fonseka</h3>
-                            <p class="text-gray-600 mb-2">Student</p>
+                        <div class="glass-card rounded-xl p-8 text-center hover-glow transition-all">
+                            <div class="relative mx-auto w-28 h-28 mb-6">
+                                <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 blur-sm animate-glow-pulse"></div>
+                                <img alt="Navod Fonseka" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white"
+                                     src="assets/images/navod.png">
+                            </div>
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Navod Fonseka</h3>
+                            <p class="text-blue-700 font-medium mb-2">Student</p>
                             <p class="text-sm text-gray-500 mb-4">it21156410@my.sliit.lk</p>
-                            <a class="text-medical-blue hover:text-medical-dark-blue" href="#">
-                                <i class="fab fa-linkedin text-2xl"></i>
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition-all" href="#">
+                                <i class="fab fa-linkedin text-xl"></i>
                             </a>
                         </div>
 
-                        <div class="bg-white rounded-lg p-6 shadow-lg text-center hover-scale">
-                            <img alt="Maneesh Prashantha" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                                 src="assets/images/maneesh.png">
-                            <h3 class="text-xl font-bold text-medical-dark-blue mb-2">Maneesh Prashantha</h3>
-                            <p class="text-gray-600 mb-2">Student</p>
+                        <div class="glass-card rounded-xl p-8 text-center hover-glow transition-all">
+                            <div class="relative mx-auto w-28 h-28 mb-6">
+                                <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 blur-sm animate-glow-pulse"></div>
+                                <img alt="Maneesh Prashantha" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white"
+                                     src="assets/images/maneesh.png">
+                            </div>
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Maneesh Prashantha</h3>
+                            <p class="text-blue-700 font-medium mb-2">Student</p>
                             <p class="text-sm text-gray-500 mb-4">it21169908@my.sliit.lk</p>
-                            <a class="text-medical-blue hover:text-medical-dark-blue" href="#">
-                                <i class="fab fa-linkedin text-2xl"></i>
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition-all" href="#">
+                                <i class="fab fa-linkedin text-xl"></i>
                             </a>
                         </div>
 
-                        <div class="bg-white rounded-lg p-6 shadow-lg text-center hover-scale">
-                            <img alt="Nishadi Nawanjala" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                                 src="assets/images/nishadi.jpg">
-                            <h3 class="text-xl font-bold text-medical-dark-blue mb-2">Nishadi Nawanjala</h3>
-                            <p class="text-gray-600 mb-2">Student</p>
+                        <div class="glass-card rounded-xl p-8 text-center hover-glow transition-all">
+                            <div class="relative mx-auto w-28 h-28 mb-6">
+                                <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 blur-sm animate-glow-pulse"></div>
+                                <img alt="Nishadi Nawanjala" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white"
+                                     src="assets/images/nishadi.jpg">
+                            </div>
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Nishadi Nawanjala</h3>
+                            <p class="text-blue-700 font-medium mb-2">Student</p>
                             <p class="text-sm text-gray-500 mb-4">it21156038@my.sliit.lk</p>
-                            <a class="text-medical-blue hover:text-medical-dark-blue" href="#">
-                                <i class="fab fa-linkedin text-2xl"></i>
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition-all" href="#">
+                                <i class="fab fa-linkedin text-xl"></i>
                             </a>
                         </div>
 
                         <!-- Supervisors -->
-                        <div class="bg-white rounded-lg p-6 shadow-lg text-center hover-scale">
-                            <img alt="Jenny Krishara" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                                 src="assets/images/supervisor.jpg">
-                            <h3 class="text-xl font-bold text-medical-dark-blue mb-2">Jenny Krishara</h3>
-                            <p class="text-gray-600 mb-2">Senior Lecturer</p>
+                        <div class="glass-card rounded-xl p-8 text-center hover-glow transition-all">
+                            <div class="relative mx-auto w-28 h-28 mb-6">
+                                <div class="absolute inset-0 rounded-full bg-gradient-to-r from-teal-400 to-teal-600 blur-sm animate-glow-pulse"></div>
+                                <img alt="Jenny Krishara" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white"
+                                     src="assets/images/supervisor.jpg">
+                            </div>
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-teal-700 to-teal-500 bg-clip-text text-transparent mb-2">Jenny Krishara</h3>
+                            <p class="text-teal-700 font-medium mb-2">Senior Lecturer</p>
                             <p class="text-sm text-gray-500 mb-4">jenny.k@sliit.lk</p>
-                            <a class="text-medical-blue hover:text-medical-dark-blue" href="#">
-                                <i class="fas fa-external-link-alt text-xl"></i>
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-100 text-teal-600 hover:bg-teal-600 hover:text-white transition-all" href="#">
+                                <i class="fas fa-external-link-alt text-lg"></i>
                             </a>
                         </div>
 
-                        <div class="bg-white rounded-lg p-6 shadow-lg text-center hover-scale">
-                            <img alt="Kanishka Yapa" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                                 src="assets/images/co_supervisor.jpg">
-                            <h3 class="text-xl font-bold text-medical-dark-blue mb-2">Kanishka Yapa</h3>
-                            <p class="text-gray-600 mb-2">Lecturer</p>
+                        <div class="glass-card rounded-xl p-8 text-center hover-glow transition-all">
+                            <div class="relative mx-auto w-28 h-28 mb-6">
+                                <div class="absolute inset-0 rounded-full bg-gradient-to-r from-teal-400 to-teal-600 blur-sm animate-glow-pulse"></div>
+                                <img alt="Kanishka Yapa" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white"
+                                     src="assets/images/co_supervisor.jpg">
+                            </div>
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-teal-700 to-teal-500 bg-clip-text text-transparent mb-2">Kanishka Yapa</h3>
+                            <p class="text-teal-700 font-medium mb-2">Lecturer</p>
                             <p class="text-sm text-gray-500 mb-4">kanishka.y@sliit.lk</p>
-                            <a class="text-medical-blue hover:text-medical-dark-blue" href="#">
-                                <i class="fas fa-external-link-alt text-xl"></i>
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-100 text-teal-600 hover:bg-teal-600 hover:text-white transition-all" href="#">
+                                <i class="fas fa-external-link-alt text-lg"></i>
                             </a>
                         </div>
 
                         <!-- Medical Consultant -->
-                        <div class="bg-white rounded-lg p-6 shadow-lg text-center hover-scale md:col-span-2 lg:col-span-1">
-                            <img alt="Dr. Selvarajini Vettivelu" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                                 src="assets/images/external_supervisor.jpg">
-                            <h3 class="text-xl font-bold text-medical-dark-blue mb-2">Dr. Selvarajini Vettivelu</h3>
-                            <p class="text-gray-600 mb-2">E.N.T Consultant</p>
+                        <div class="glass-card rounded-xl p-8 text-center hover-glow transition-all md:col-span-2 lg:col-span-1">
+                            <div class="relative mx-auto w-28 h-28 mb-6">
+                                <div class="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 blur-sm animate-glow-pulse"></div>
+                                <img alt="Dr. Selvarajini Vettivelu" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white"
+                                     src="assets/images/external_supervisor.jpg">
+                            </div>
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-purple-700 to-purple-500 bg-clip-text text-transparent mb-2">Dr. Selvarajini Vettivelu</h3>
+                            <p class="text-purple-700 font-medium mb-2">E.N.T Consultant</p>
                             <p class="text-sm text-gray-500 mb-4">Medical Advisor</p>
                         </div>
                     </div>
@@ -618,52 +762,75 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="py-20 bg-white" id="contact">
-            <div class="container mx-auto px-6">
+        <section class="py-20 bg-gradient-to-br from-blue-100 via-white to-blue-50 relative overflow-hidden" id="contact">
+            <!-- Background decorative elements -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute top-40 right-20 w-80 h-80 bg-blue-200/20 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-blue-300/20 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
                 <div class="fade-in">
-                    <h2 class="text-4xl font-bold text-center text-medical-dark-blue mb-16">
+                    <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent mb-16">
                         Contact Us
                     </h2>
                     <div class="max-w-4xl mx-auto">
                         <div class="grid md:grid-cols-2 gap-12">
-                            <div>
-                                <h3 class="text-2xl font-bold text-medical-dark-blue mb-6">Get in Touch</h3>
-                                <div class="space-y-4">
-                                    <div class="flex items-center">
-                                        <i class="fas fa-envelope text-medical-blue mr-4"></i>
-                                        <span>entinsight@research.sliit.lk</span>
+                            <div class="glass-card rounded-xl p-8 hover-glow">
+                                <div class="flex items-center mb-8">
+                                    <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
+                                        <i class="fas fa-headset text-2xl"></i>
                                     </div>
-                                    <div class="flex items-center">
-                                        <i class="fas fa-phone text-medical-blue mr-4"></i>
-                                        <span>+94 11 754 4801</span>
+                                    <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Get in Touch</h3>
+                                </div>
+                                <div class="space-y-6">
+                                    <div class="flex items-center p-4 glass rounded-lg hover-glow transition-all border border-blue-200/30">
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white mr-4">
+                                            <i class="fas fa-envelope text-lg"></i>
+                                        </div>
+                                        <span class="text-gray-700">entinsight@research.sliit.lk</span>
                                     </div>
-                                    <div class="flex items-center">
-                                        <i class="fas fa-map-marker-alt text-medical-blue mr-4"></i>
-                                        <span>SLIIT, New Kandy Road, Malabe, Sri Lanka</span>
+                                    <div class="flex items-center p-4 glass rounded-lg hover-glow transition-all border border-blue-200/30">
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white mr-4">
+                                            <i class="fas fa-phone text-lg"></i>
+                                        </div>
+                                        <span class="text-gray-700">+94 11 754 4801</span>
+                                    </div>
+                                    <div class="flex items-center p-4 glass rounded-lg hover-glow transition-all border border-blue-200/30">
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white mr-4">
+                                            <i class="fas fa-map-marker-alt text-lg"></i>
+                                        </div>
+                                        <span class="text-gray-700">SLIIT, New Kandy Road, Malabe, Sri Lanka</span>
                                     </div>
                                 </div>
                             </div>
-                            <div>
+                            <div class="glass-card rounded-xl p-8 hover-glow">
+                                <div class="flex items-center mb-8">
+                                    <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
+                                        <i class="fas fa-paper-plane text-2xl"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Send a Message</h3>
+                                </div>
                                 <form class="space-y-4">
                                     <div>
-                                        <label class="block text-sm font-medium text-gray-700 mb-2" for="name">Name</label>
-                                        <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent" id="name" name="name"
-                                               type="text">
+                                        <label class="block text-sm font-medium text-blue-700 mb-2" for="name">Name</label>
+                                        <input class="w-full px-4 py-3 glass border border-blue-200/50 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" 
+                                               id="name" name="name" type="text" placeholder="Your name">
                                     </div>
                                     <div>
-                                        <label class="block text-sm font-medium text-gray-700 mb-2" for="email">Email</label>
-                                        <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent" id="email" name="email"
-                                               type="email">
+                                        <label class="block text-sm font-medium text-blue-700 mb-2" for="email">Email</label>
+                                        <input class="w-full px-4 py-3 glass border border-blue-200/50 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" 
+                                               id="email" name="email" type="email" placeholder="Your email">
                                     </div>
                                     <div>
-                                        <label class="block text-sm font-medium text-gray-700 mb-2"
-                                               for="message">Message</label>
-                                        <textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent" id="message" name="message"
-                                                  rows="4"></textarea>
+                                        <label class="block text-sm font-medium text-blue-700 mb-2" for="message">Message</label>
+                                        <textarea class="w-full px-4 py-3 glass border border-blue-200/50 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" 
+                                                  id="message" name="message" rows="4" placeholder="Your message"></textarea>
                                     </div>
-                                    <button class="w-full bg-medical-blue text-white py-3 rounded-lg font-semibold hover:bg-medical-dark-blue transition-colors"
+                                    <button class="w-full bg-gradient-blue text-white py-3 px-6 rounded-lg font-semibold hover-glow transition-all flex items-center justify-center"
                                             type="submit">
-                                        Send Message
+                                        <span>Send Message</span>
+                                        <i class="fas fa-arrow-right ml-2"></i>
                                     </button>
                                 </form>
                             </div>
@@ -674,40 +841,70 @@
         </section>
 
         <!-- Footer -->
-        <footer class="bg-medical-dark-blue text-white py-12">
-            <div class="container mx-auto px-6">
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div>
-                        <h3 class="text-2xl font-bold mb-4">ENT Insight</h3>
-                        <p class="text-gray-300">
+        <footer class="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16 relative overflow-hidden">
+            <!-- Background decorative elements -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-700/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="grid md:grid-cols-3 gap-12">
+                    <div class="glass-dark rounded-xl p-6 hover-glow">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent">ENT Insight</h3>
+                        <p class="text-blue-100">
                             Advanced AI-powered medical imaging solution for ENT clinical environments.
                         </p>
+                        <img src="assets/images/logos/ent-insight-logo-w.png" alt="ENT Insight Logo" class="h-12 mt-4 opacity-80">
                     </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                        <div class="space-y-2">
-                            <a class="block text-gray-300 hover:text-white transition-colors" href="#home">Home</a>
-                            <a class="block text-gray-300 hover:text-white transition-colors" href="#domain">Domain</a>
-                            <a class="block text-gray-300 hover:text-white transition-colors" href="#research">Research</a>
-                            <a class="block text-gray-300 hover:text-white transition-colors" href="#team">Team</a>
+                    <div class="glass-dark rounded-xl p-6 hover-glow">
+                        <h4 class="text-lg font-semibold mb-4 text-blue-200">Quick Links</h4>
+                        <div class="space-y-3">
+                            <a class="flex items-center text-blue-100 hover:text-white transition-all" href="#home">
+                                <div class="w-6 h-6 rounded-full bg-blue-700/50 flex items-center justify-center mr-2">
+                                    <i class="fas fa-home text-xs"></i>
+                                </div>
+                                <span>Home</span>
+                            </a>
+                            <a class="flex items-center text-blue-100 hover:text-white transition-all" href="#domain">
+                                <div class="w-6 h-6 rounded-full bg-blue-700/50 flex items-center justify-center mr-2">
+                                    <i class="fas fa-microscope text-xs"></i>
+                                </div>
+                                <span>Domain</span>
+                            </a>
+                            <a class="flex items-center text-blue-100 hover:text-white transition-all" href="#research">
+                                <div class="w-6 h-6 rounded-full bg-blue-700/50 flex items-center justify-center mr-2">
+                                    <i class="fas fa-flask text-xs"></i>
+                                </div>
+                                <span>Research</span>
+                            </a>
+                            <a class="flex items-center text-blue-100 hover:text-white transition-all" href="#team">
+                                <div class="w-6 h-6 rounded-full bg-blue-700/50 flex items-center justify-center mr-2">
+                                    <i class="fas fa-users text-xs"></i>
+                                </div>
+                                <span>Team</span>
+                            </a>
                         </div>
                     </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-4">Connect</h4>
-                        <div class="flex space-x-4">
-                            <a class="text-gray-300 hover:text-white transition-colors" href="#">
-                                <i class="fab fa-linkedin text-2xl"></i>
+                    <div class="glass-dark rounded-xl p-6 hover-glow">
+                        <h4 class="text-lg font-semibold mb-4 text-blue-200">Connect</h4>
+                        <div class="flex space-x-4 mb-6">
+                            <a class="w-10 h-10 rounded-full bg-blue-700/50 flex items-center justify-center text-blue-100 hover:bg-blue-600 hover:text-white transition-all" href="#">
+                                <i class="fab fa-linkedin text-xl"></i>
                             </a>
-                            <a class="text-gray-300 hover:text-white transition-colors" href="#">
-                                <i class="fab fa-github text-2xl"></i>
+                            <a class="w-10 h-10 rounded-full bg-blue-700/50 flex items-center justify-center text-blue-100 hover:bg-blue-600 hover:text-white transition-all" href="#">
+                                <i class="fab fa-github text-xl"></i>
                             </a>
-                            <a class="text-gray-300 hover:text-white transition-colors" href="#">
-                                <i class="fas fa-envelope text-2xl"></i>
+                            <a class="w-10 h-10 rounded-full bg-blue-700/50 flex items-center justify-center text-blue-100 hover:bg-blue-600 hover:text-white transition-all" href="#">
+                                <i class="fas fa-envelope text-xl"></i>
                             </a>
                         </div>
+                        <p class="text-blue-200 text-sm">
+                            Stay connected with us for the latest updates on our research and development.
+                        </p>
                     </div>
                 </div>
-                <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
+                <div class="border-t border-blue-700/50 mt-12 pt-8 text-center text-blue-200 text-sm">
                     <p>&copy; 2024 ENT Insight Research Project. All rights reserved.</p>
                 </div>
             </div>

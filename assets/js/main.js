@@ -4,16 +4,27 @@ function toggleMobileMenu() {
     menu.classList.toggle('hidden');
 }
 
-// Fade in animation on scroll
+// Fade in and scroll reveal animations on scroll
 function handleScrollAnimations() {
-    const elements = document.querySelectorAll('.fade-in');
-
-    elements.forEach(element => {
+    // Handle fade-in elements
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
         const elementVisible = 150;
 
         if (elementTop < window.innerHeight - elementVisible) {
             element.classList.add('visible');
+        }
+    });
+
+    // Handle scroll-reveal elements
+    const revealElements = document.querySelectorAll('.scroll-reveal');
+    revealElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 100;
+
+        if (elementTop < window.innerHeight - elementVisible) {
+            element.classList.add('revealed');
         }
     });
 }
