@@ -33,3 +33,21 @@ Thumbs.db       # Windows
 
 # Coverage / test reports
 coverage/
+
+# IDE - Idea's (JetBrains)
+/.idea
+/.idea/*
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+# IDE - VSCode
+/.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

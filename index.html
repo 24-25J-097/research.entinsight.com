@@ -5,9 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENT Insight - Medical Research Project</title>
     <meta name="description" content="Advanced AI-powered medical imaging solution for ENT clinical environments">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-blue': '#4A90E2',
+                        'medical-green': '#7ED321',
+                            'medical-light-blue': '#E8F4FD',
+                            'medical-dark-blue': '#2C5282',
+                        }
+                    }
+                }
+            }
+        </script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body class="bg-white text-gray-800">
+        <!-- Navigation -->
+        <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="text-2xl font-bold text-medical-dark-blue">
+                        ENT Insight
+                    </div>
+                    <div class="hidden md:flex space-x-8">
+                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#home">
+                            Home
+                        </a>
+                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#domain">
+                            Domain
+                        </a>
+                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#research">
+                            Research
+                        </a>
+                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#methodology">
+                            Methodology
+                        </a>
+                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#milestones">
+                            Milestones
+                        </a>
+                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#team">
+                            Team
+                        </a>
+                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#contact">
+                            Contact
+                        </a>
+                    </div>
+                    <button class="md:hidden" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars text-2xl text-medical-dark-blue"></i>
+                    </button>
+                </div>
+                <!-- Mobile Menu -->
+                <div class="hidden md:hidden mt-4 pb-4" id="mobileMenu">
+                    <a class="block py-2 text-gray-700 hover:text-medical-blue transition-colors" href="#home">
+                        Home
+                    </a>
+                    <a class="block py-2 text-gray-700 hover:text-medical-blue transition-colors" href="#domain">
+                        Domain
+                    </a>
+                    <a class="block py-2 text-gray-700 hover:text-medical-blue transition-colors" href="#research">
+                        Research
+                    </a>
+                    <a class="block py-2 text-gray-700 hover:text-medical-blue transition-colors" href="#methodology">
+                        Methodology
+                    </a>
+                    <a class="block py-2 text-gray-700 hover:text-medical-blue transition-colors" href="#milestones">
+                        Milestones
+                    </a>
+                    <a class="block py-2 text-gray-700 hover:text-medical-blue transition-colors" href="#team">
+                        Team
+                    </a>
+                    <a class="block py-2 text-gray-700 hover:text-medical-blue transition-colors" href="#contact">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </nav>
 
-</head>
-<body class="bg-white text-gray-800">
-test
-</body>
+
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
