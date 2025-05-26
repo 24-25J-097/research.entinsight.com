@@ -405,9 +405,9 @@
                     </h2>
                     <div class="max-w-6xl mx-auto">
                         <div class="text-center mb-12 animate-float">
-                            <div class="glass-card p-6 rounded-xl hover-glow inline-block">
+                            <div class="glass-card p-6 rounded-xl hover-glow inline-block cursor-pointer" id="systemDiagramContainer">
                                 <img alt="System Architecture Diagram" class="rounded-xl shadow-lg mx-auto glow-border"
-                                     src="assets/images/system_diagram.png">
+                                     src="assets/images/system_diagram.png" id="systemDiagram">
                             </div>
                         </div>
                         <div class="grid md:grid-cols-2 gap-12">
@@ -1072,5 +1072,26 @@
         </button>
 
         <script src="assets/js/main.js"></script>
-    </body>
+
+        <!-- Image Zoom Modal -->
+        <div class="modal-overlay" id="imageModal">
+            <div class="modal-content glass-card">
+                <button class="close-btn" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-image-container" id="modalImageContainer">
+                    <img src="" alt="Zoomed Image" class="modal-image" id="modalImage">
+                </div>
+                <div class="modal-controls">
+                    <button class="zoom-btn" id="zoomOut">
+                        <i class="fas fa-search-minus"></i>
+                    </button>
+                    <button class="zoom-btn" id="zoomIn">
+                        <i class="fas fa-search-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+</body>
 </html>
