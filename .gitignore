@@ -1,0 +1,35 @@
+# Node modules (if using Tailwind CLI or npm scripts)
+node_modules/
+
+# Build output
+dist/
+build/
+out/
+*.log
+
+# OS-specific files
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+# Tailwind CSS JIT cache
+.tailwind-cache/
+
+# VS Code settings
+.vscode/
+
+# Env files (if you use environment variables)
+.env
+.env.local
+.env.development
+.env.production
+
+# Cache
+.cache/
+*.tmp
+
+# Generated files
+*.min.js
+*.min.css
+
+# Coverage / test reports
+coverage/
