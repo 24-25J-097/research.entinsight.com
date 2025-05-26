@@ -28,8 +28,10 @@
         <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
             <div class="container mx-auto px-6 py-4">
                 <div class="flex justify-between items-center">
-                    <div class="text-2xl font-bold text-medical-dark-blue">
-                        ENT Insight
+                    <div class="flex items-center">
+                        <a href="#home">
+                            <img src="assets/images/logos/ent-insight-logo-long.png" alt="ENT Insight Logo" class="h-10 mr-2 hover-scale">
+                        </a>
                     </div>
                     <div class="hidden md:flex space-x-8">
                         <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#home">
@@ -60,6 +62,11 @@
                 </div>
                 <!-- Mobile Menu -->
                 <div class="hidden md:hidden mt-4 pb-4" id="mobileMenu">
+                    <div class="flex justify-center mb-4">
+                        <a href="#home" onclick="toggleMobileMenu()">
+                            <img src="assets/images/logos/ent-insight-logo-long.png" alt="ENT Insight Logo" class="h-8 hover-scale">
+                        </a>
+                    </div>
                     <a class="block py-2 text-gray-700 hover:text-medical-blue transition-colors" href="#home">
                         Home
                     </a>
@@ -86,25 +93,69 @@
         </nav>
 
         <!-- Hero Section -->
-        <section class="pt-20 min-h-screen bg-gradient-to-br from-medical-light-blue to-white flex items-center" id="home">
-            <div class="container mx-auto px-6">
-                <div class="text-center fade-in">
-                    <h1 class="text-5xl md:text-7xl font-bold text-medical-dark-blue mb-6">
+        <section class="pt-20 min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 flex items-center relative overflow-hidden" id="home">
+            <!-- Background decorative elements -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute -top-40 -right-40 w-80 h-80 bg-blue-200/30 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-300/20 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-center max-w-5xl mx-auto">
+                    <!-- Badge -->
+                    <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-8 border border-blue-200">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></div>
+                        Advanced Medical AI Technology
+                    </div>
+
+                    <!-- Main heading -->
+                    <h1 class="text-6xl md:text-8xl font-bold bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent mb-6 leading-tight">
                         ENT Insight
                     </h1>
-                    <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+
+                    <!-- Subtitle -->
+                    <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
                         Advanced AI-Powered Medical Imaging Solution for ENT Clinical Environments
                     </p>
-                    <div class="space-x-4">
-                        <a class="inline-block bg-medical-blue text-white px-8 py-4 rounded-lg font-semibold
-                    hover:bg-medical-dark-blue transition-colors hover-scale" href="#domain">
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a href="#domain" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl hover-scale transition-all">
                             Explore Research
+                            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                            </svg>
                         </a>
-                        <a class="inline-block border-2 border-medical-blue text-medical-blue px-8 py-4 rounded-lg
-                    font-semibold hover:bg-medical-blue hover:text-white transition-colors" href="#contact">
+
+                        <a href="#contact" class="inline-flex items-center border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-6 text-lg font-semibold rounded-xl transition-all hover:shadow-lg">
                             Contact Us
                         </a>
                     </div>
+
+                    <!-- Trust indicators -->
+                    <div class="mt-16 pt-8 border-t border-gray-200">
+                        <p class="text-sm text-gray-500 mb-6">Trusted by leading medical institutions</p>
+                        <div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
+                            <div class="bg-gray-100 px-6 py-3 rounded-lg">
+                                <span class="text-gray-600 font-medium">Medical Center A</span>
+                            </div>
+                            <div class="bg-gray-100 px-6 py-3 rounded-lg">
+                                <span class="text-gray-600 font-medium">Hospital B</span>
+                            </div>
+                            <div class="bg-gray-100 px-6 py-3 rounded-lg">
+                                <span class="text-gray-600 font-medium">Clinic Network C</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+                <div class="animate-bounce">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
                 </div>
             </div>
         </section>
