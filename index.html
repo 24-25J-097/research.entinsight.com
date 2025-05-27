@@ -220,7 +220,7 @@
                             </div>
                             <img
                                 alt="Foreign Objects X-Ray"
-                                class="rounded-xl mb-4 w-full shadow-lg hover-scale"
+                                class="rounded-xl mb-4 m-auto h-[400px] shadow-lg hover-scale"
                                 src="assets/images/foreign.jpg"
                             />
                             <p class="text-gray-700 mb-4">
@@ -242,7 +242,7 @@
                             </div>
                             <img
                                 alt="Sinusitis X-Ray"
-                                class="rounded-xl mb-4 w-full shadow-lg hover-scale"
+                                class="rounded-xl mb-4 m-auto h-[400px] shadow-lg hover-scale"
                                 src="assets/images/sinusitis.png"
                             />
                             <p class="text-gray-700 mb-4">
@@ -263,7 +263,7 @@
                             </div>
                             <img
                                 alt="Cholesteatoma Image"
-                                class="rounded-xl mb-4 w-full shadow-lg hover-scale"
+                                class="rounded-xl mb-4 m-auto h-[400px] shadow-lg hover-scale"
                                 src="assets/images/cholesteotoma.png"
                             />
                             <p class="text-gray-700 mb-4">
@@ -284,7 +284,7 @@
                                 </div>
                                 <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Pharyngitis</h3>
                             </div>
-                            <img alt="Pharyngitis Image" class="rounded-xl mb-4 w-full shadow-lg hover-scale"
+                            <img alt="Pharyngitis Image" class="rounded-xl mb-4 m-auto h-[400px] shadow-lg hover-scale"
                                  src="assets/images/phyrangitis.png">
                             <p class="text-gray-700 mb-4">
                                 Pharyngitis is an inflammation of the pharynx, often caused by viral or bacterial infections.
@@ -405,9 +405,10 @@
                     </h2>
                     <div class="max-w-6xl mx-auto">
                         <div class="text-center mb-12 animate-float">
-                            <div class="glass-card p-6 rounded-xl hover-glow inline-block">
+                            <div class="glass-card p-6 rounded-xl hover-glow inline-block cursor-pointer tooltip-container" id="systemDiagramContainer">
                                 <img alt="System Architecture Diagram" class="rounded-xl shadow-lg mx-auto glow-border"
-                                     src="assets/images/system_diagram.png">
+                                     src="assets/images/system_diagram.png" id="systemDiagram">
+                                <span class="tooltip">Open Image</span>
                             </div>
                         </div>
                         <div class="grid md:grid-cols-2 gap-12">
@@ -962,13 +963,12 @@
                     <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent mb-16">
                         Our Team
                     </h2>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                        <!-- Students -->
-                        <div class="glass-card rounded-xl p-8 text-center hover-glow transition-all">
+                    <div class="flex flex-wrap gap-8 justify-center">
+                        <!-- First row - Students -->
+                        <div class="glass-card hover-glow p-7 rounded-xl text-center transition-all w-[300px]">
                             <div class="relative mx-auto w-28 h-28 mb-6">
                                 <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 blur-sm animate-glow-pulse"></div>
-                                <img alt="Pasan Baddewithana" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white"
-                                     src="assets/images/pasan.jpg">
+                                <img alt="Pasan Baddewithana" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white" src="assets/images/pasan.jpg">
                             </div>
                             <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Pasan Baddewithana</h3>
                             <p class="text-blue-700 font-medium mb-2">Student</p>
@@ -978,25 +978,23 @@
                             </a>
                         </div>
 
-                        <div class="glass-card rounded-xl p-8 text-center hover-glow transition-all">
+                        <div class="glass-card hover-glow p-7 rounded-xl text-center transition-all w-[300px]">
                             <div class="relative mx-auto w-28 h-28 mb-6">
                                 <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 blur-sm animate-glow-pulse"></div>
-                                <img alt="Navod Fonseka" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white"
-                                     src="assets/images/navod.png">
+                                <img alt="Navod Fonseka" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white" src="assets/images/navod.png">
                             </div>
-                            <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Navod Fonseka</h3>
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Navod Hansajith Fonseka</h3>
                             <p class="text-blue-700 font-medium mb-2">Student</p>
                             <p class="text-sm text-gray-500 mb-4">it21156410@my.sliit.lk</p>
-                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition-all" href="#">
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition-all" href="https://www.linkedin.com/in/hansajith18" target="_blank">
                                 <i class="fab fa-linkedin text-xl"></i>
                             </a>
                         </div>
 
-                        <div class="glass-card rounded-xl p-8 text-center hover-glow transition-all">
+                        <div class="glass-card hover-glow p-7 rounded-xl text-center transition-all w-[300px]">
                             <div class="relative mx-auto w-28 h-28 mb-6">
                                 <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 blur-sm animate-glow-pulse"></div>
-                                <img alt="Maneesh Prashantha" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white"
-                                     src="assets/images/maneesh.png">
+                                <img alt="Maneesh Prashantha" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white" src="assets/images/maneesh.png">
                             </div>
                             <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Maneesh Prashantha</h3>
                             <p class="text-blue-700 font-medium mb-2">Student</p>
@@ -1006,55 +1004,51 @@
                             </a>
                         </div>
 
-                        <div class="glass-card rounded-xl p-8 text-center hover-glow transition-all">
+                        <div class="glass-card hover-glow p-7 rounded-xl text-center transition-all w-[300px]">
                             <div class="relative mx-auto w-28 h-28 mb-6">
                                 <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 blur-sm animate-glow-pulse"></div>
-                                <img alt="Nishadi Nawanjala" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white"
-                                     src="assets/images/nishadi.jpg">
+                                <img alt="Nishadi Nawanjala" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white" src="assets/images/nishadi.jpg">
                             </div>
                             <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Nishadi Nawanjala</h3>
                             <p class="text-blue-700 font-medium mb-2">Student</p>
                             <p class="text-sm text-gray-500 mb-4">it21156038@my.sliit.lk</p>
-                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition-all" href="#">
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition-all" href="https://www.linkedin.com/in/nishadi-nawanjala-2b265721b/" target="_blank">
                                 <i class="fab fa-linkedin text-xl"></i>
                             </a>
                         </div>
 
-                        <!-- Supervisors -->
-                        <div class="glass-card rounded-xl p-8 text-center hover-glow transition-all">
+                        <!-- Second row - Supervisors (centered) -->
+                        <div class="glass-card hover-glow p-7 rounded-xl text-center transition-all w-[300px]">
                             <div class="relative mx-auto w-28 h-28 mb-6">
                                 <div class="absolute inset-0 rounded-full bg-gradient-to-r from-teal-400 to-teal-600 blur-sm animate-glow-pulse"></div>
-                                <img alt="Jenny Krishara" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white"
-                                     src="assets/images/supervisor.jpg">
+                                <img alt="Jenny Krishara" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white" src="assets/images/supervisor.jpg">
                             </div>
                             <h3 class="text-xl font-bold bg-gradient-to-r from-teal-700 to-teal-500 bg-clip-text text-transparent mb-2">Jenny Krishara</h3>
                             <p class="text-teal-700 font-medium mb-2">Senior Lecturer</p>
                             <p class="text-sm text-gray-500 mb-4">jenny.k@sliit.lk</p>
-                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-100 text-teal-600 hover:bg-teal-600 hover:text-white transition-all" href="#">
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-100 text-teal-600 hover:bg-teal-600 hover:text-white transition-all" href="https://www.sliit.lk/faculty-of-computing/staff/jenny.k" target="_blank">
                                 <i class="fas fa-external-link-alt text-lg"></i>
                             </a>
                         </div>
 
-                        <div class="glass-card rounded-xl p-8 text-center hover-glow transition-all">
+                        <div class="glass-card hover-glow p-7 rounded-xl text-center transition-all w-[300px]">
                             <div class="relative mx-auto w-28 h-28 mb-6">
                                 <div class="absolute inset-0 rounded-full bg-gradient-to-r from-teal-400 to-teal-600 blur-sm animate-glow-pulse"></div>
-                                <img alt="Kanishka Yapa" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white"
-                                     src="assets/images/co_supervisor.jpg">
+                                <img alt="Kanishka Yapa" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white" src="assets/images/co_supervisor.jpg">
                             </div>
                             <h3 class="text-xl font-bold bg-gradient-to-r from-teal-700 to-teal-500 bg-clip-text text-transparent mb-2">Kanishka Yapa</h3>
                             <p class="text-teal-700 font-medium mb-2">Lecturer</p>
                             <p class="text-sm text-gray-500 mb-4">kanishka.y@sliit.lk</p>
-                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-100 text-teal-600 hover:bg-teal-600 hover:text-white transition-all" href="#">
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-100 text-teal-600 hover:bg-teal-600 hover:text-white transition-all" href="https://www.sliit.lk/faculty-of-computing/staff/kanishka.y" target="_blank">
                                 <i class="fas fa-external-link-alt text-lg"></i>
                             </a>
                         </div>
 
                         <!-- Medical Consultant -->
-                        <div class="glass-card rounded-xl p-8 text-center hover-glow transition-all md:col-span-2 lg:col-span-1">
+                        <div class="glass-card hover-glow p-8 rounded-xl text-center transition-all w-[300px]">
                             <div class="relative mx-auto w-28 h-28 mb-6">
                                 <div class="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 blur-sm animate-glow-pulse"></div>
-                                <img alt="Dr. Selvarajini Vettivelu" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white"
-                                     src="assets/images/external_supervisor.jpg">
+                                <img alt="Dr. Selvarajini Vettivelu" class="w-28 h-28 rounded-full mx-auto object-cover relative z-10 border-2 border-white" src="assets/images/external_supervisor.jpg">
                             </div>
                             <h3 class="text-xl font-bold bg-gradient-to-r from-purple-700 to-purple-500 bg-clip-text text-transparent mb-2">Dr. Selvarajini Vettivelu</h3>
                             <p class="text-purple-700 font-medium mb-2">E.N.T Consultant</p>
@@ -1092,7 +1086,7 @@
                                         <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white mr-4">
                                             <i class="fas fa-envelope text-lg"></i>
                                         </div>
-                                        <span class="text-gray-700">entinsight@research.sliit.lk</span>
+                                        <span class="text-gray-700">research@entinsight.com</span>
                                     </div>
                                     <div class="flex items-center p-4 glass rounded-lg hover-glow transition-all border border-blue-200/30">
                                         <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white mr-4">
@@ -1118,17 +1112,17 @@
                                 <form class="space-y-4">
                                     <div>
                                         <label class="block text-sm font-medium text-blue-700 mb-2" for="name">Name</label>
-                                        <input class="w-full px-4 py-3 glass border border-blue-200/50 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" 
+                                        <input class="w-full px-4 py-3 glass border border-blue-200/50 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                                                id="name" name="name" type="text" placeholder="Your name">
                                     </div>
                                     <div>
                                         <label class="block text-sm font-medium text-blue-700 mb-2" for="email">Email</label>
-                                        <input class="w-full px-4 py-3 glass border border-blue-200/50 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" 
+                                        <input class="w-full px-4 py-3 glass border border-blue-200/50 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                                                id="email" name="email" type="email" placeholder="Your email">
                                     </div>
                                     <div>
                                         <label class="block text-sm font-medium text-blue-700 mb-2" for="message">Message</label>
-                                        <textarea class="w-full px-4 py-3 glass border border-blue-200/50 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" 
+                                        <textarea class="w-full px-4 py-3 glass border border-blue-200/50 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                                                   id="message" name="message" rows="4" placeholder="Your message"></textarea>
                                     </div>
                                     <button class="w-full bg-gradient-blue text-white py-3 px-6 rounded-lg font-semibold hover-glow transition-all flex items-center justify-center"
@@ -1220,5 +1214,26 @@
         </button>
 
         <script src="assets/js/main.js"></script>
-    </body>
+
+        <!-- Image Zoom Modal -->
+        <div class="modal-overlay" id="imageModal">
+            <div class="modal-content glass-card">
+                <button class="close-btn" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-image-container" id="modalImageContainer">
+                    <img src="" alt="Zoomed Image" class="modal-image" id="modalImage">
+                </div>
+                <div class="modal-controls">
+                    <button class="zoom-btn" id="zoomOut">
+                        <i class="fas fa-search-minus"></i>
+                    </button>
+                    <button class="zoom-btn" id="zoomIn">
+                        <i class="fas fa-search-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+</body>
 </html>

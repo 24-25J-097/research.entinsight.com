@@ -82,3 +82,116 @@ scrollToTopBtn.addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+
+// Image Zoom Modal Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const systemDiagram = document.getElementById('systemDiagram');
+    const systemDiagramContainer = document.getElementById('systemDiagramContainer');
+    const imageModal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const closeModal = document.getElementById('closeModal');
+    const zoomIn = document.getElementById('zoomIn');
+    const zoomOut = document.getElementById('zoomOut');
+    const modalImageContainer = document.getElementById('modalImageContainer');
+
+    let currentZoom = 1;
+    const zoomStep = 0.2;
+    const maxZoom = 3;
+    const minZoom = 0.5;
+
+    // Open modal when system diagram is clicked
+    if (systemDiagramContainer) {
+        systemDiagramContainer.addEventListener('click', function() {
+            if (systemDiagram) {
+                modalImage.src = systemDiagram.src;
+                imageModal.classList.add('active');
+                currentZoom = 1;
+                updateZoom();
+                document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+            }
+        });
+    }
+
+    // Close modal when close button is clicked
+    if (closeModal) {
+        closeModal.addEventListener('click', function() {
+            imageModal.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        });
+    }
+
+    // Close modal when clicking outside the image
+    if (imageModal) {
+        imageModal.addEventListener('click', function(e) {
+            if (e.target === imageModal) {
+                imageModal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+    }
+
+    // Zoom in button
+    if (zoomIn) {
+        zoomIn.addEventListener('click', function() {
+            if (currentZoom < maxZoom) {
+                currentZoom += zoomStep;
+                updateZoom();
+            }
+        });
+    }
+
+    // Zoom out button
+    if (zoomOut) {
+        zoomOut.addEventListener('click', function() {
+            if (currentZoom > minZoom) {
+                currentZoom -= zoomStep;
+                updateZoom();
+            }
+        });
+    }
+
+    // Update zoom level
+    function updateZoom() {
+        if (modalImage) {
+            modalImage.style.transform = `scale(${currentZoom})`;
+        }
+    }
+
+    // Handle keyboard events
+    document.addEventListener('keydown', function(e) {
+        if (imageModal.classList.contains('active')) {
+            if (e.key === 'Escape') {
+                imageModal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            } else if (e.key === '+' || e.key === '=') {
+                if (currentZoom < maxZoom) {
+                    currentZoom += zoomStep;
+                    updateZoom();
+                }
+            } else if (e.key === '-' || e.key === '_') {
+                if (currentZoom > minZoom) {
+                    currentZoom -= zoomStep;
+                    updateZoom();
+                }
+            }
+        }
+    });
+
+    // Handle mouse wheel for zooming
+    if (modalImageContainer) {
+        modalImageContainer.addEventListener('wheel', function(e) {
+            if (imageModal.classList.contains('active')) {
+                e.preventDefault();
+                if (e.deltaY < 0 && currentZoom < maxZoom) {
+                    // Zoom in
+                    currentZoom += zoomStep;
+                    updateZoom();
+                } else if (e.deltaY > 0 && currentZoom > minZoom) {
+                    // Zoom out
+                    currentZoom -= zoomStep;
+                    updateZoom();
+                }
+            }
+        });
+    }
+});
