@@ -525,7 +525,7 @@
                             </div>
 
                             <!-- Milestone 3 -->
-                            <div class="glass-card rounded-xl p-6 hover-glow transition-all flex items-center">
+                            <div class="glass-card rounded-xl p-6 hover-glow transition-all flex items-center relative overflow-hidden">
                                 <div class="bg-gradient-to-r from-green-400 to-green-600 text-white rounded-full w-14 h-14 flex items-center justify-center font-bold mr-6 glow animate-glow-pulse">
                                     3
                                 </div>
@@ -556,148 +556,296 @@
                     <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent mb-16">
                         Timeline Of The Project
                     </h2>
-                    <div class="max-w-4xl mx-auto">
-                        <div class="relative">
-                            <!-- Vertical timeline line -->
-                            <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600"></div>
+                    <!-- Timeline container -->
+<div class="max-w-4xl mx-auto">
+    <div class="relative">
+        <!-- Vertical timeline line -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600"></div>
 
-                            <!-- Timeline items -->
-                            <div class="space-y-16">
-                                <!-- Timeline item 1 -->
-                                <div class="relative z-10">
-                                    <!-- Date badge -->
-                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-blue text-white rounded-full w-16 h-16 flex items-center justify-center font-bold glow animate-glow-pulse">
-                                        Jan
-                                    </div>
+        <!-- Timeline items -->
+        <div class="space-y-16">
+            <!-- Timeline item 1 - LEFT SIDE -->
+            <div class="relative z-10">
+                <!-- Date badge -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+    <span>13 May</span>
+    <span class="text-xs font-normal">2024</span>
+    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+            0/100
+        </span>
+</div>
 
-                                    <!-- Content card - left side -->
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                                        <div class="md:text-right md:pr-12">
-                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto">
-                                                <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Project Initiation</h3>
-                                                <p class="text-gray-600">Initial research and problem identification. Team formation and project scope definition.</p>
-                                            </div>
-                                        </div>
-                                        <div class="hidden md:block"></div>
-                                    </div>
-                                </div>
-
-                                <!-- Timeline item 2 -->
-                                <div class="relative z-10">
-                                    <!-- Date badge -->
-                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-blue text-white rounded-full w-16 h-16 flex items-center justify-center font-bold glow animate-glow-pulse">
-                                        Feb
-                                    </div>
-
-                                    <!-- Content card - right side -->
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                                        <div class="hidden md:block"></div>
-                                        <div class="md:pl-12">
-                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all">
-                                                <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Literature Review</h3>
-                                                <p class="text-gray-600">Comprehensive analysis of existing research and technologies in ENT medical imaging.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Timeline item 3 -->
-                                <div class="relative z-10">
-                                    <!-- Date badge -->
-                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-blue text-white rounded-full w-16 h-16 flex items-center justify-center font-bold glow animate-glow-pulse">
-                                        Mar
-                                    </div>
-
-                                    <!-- Content card - left side -->
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                                        <div class="md:text-right md:pr-12">
-                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto">
-                                                <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">System Design</h3>
-                                                <p class="text-gray-600">Architecture planning and technology stack selection. Initial UI/UX design concepts.</p>
-                                            </div>
-                                        </div>
-                                        <div class="hidden md:block"></div>
-                                    </div>
-                                </div>
-
-                                <!-- Timeline item 4 -->
-                                <div class="relative z-10">
-                                    <!-- Date badge -->
-                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-blue text-white rounded-full w-16 h-16 flex items-center justify-center font-bold glow animate-glow-pulse">
-                                        Apr
-                                    </div>
-
-                                    <!-- Content card - right side -->
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                                        <div class="hidden md:block"></div>
-                                        <div class="md:pl-12">
-                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all">
-                                                <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Data Collection</h3>
-                                                <p class="text-gray-600">Gathering and preprocessing medical images for model training and validation.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Timeline item 5 -->
-                                <div class="relative z-10">
-                                    <!-- Date badge -->
-                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-green-400 to-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold glow animate-glow-pulse">
-                                        Now
-                                    </div>
-
-                                    <!-- Content card - left side -->
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                                        <div class="md:text-right md:pr-12">
-                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto border border-green-200/50">
-                                                <h3 class="text-xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent mb-2">Model Development</h3>
-                                                <p class="text-gray-600">Implementation and training of deep learning models for medical image analysis.</p>
-                                            </div>
-                                        </div>
-                                        <div class="hidden md:block"></div>
-                                    </div>
-                                </div>
-
-                                <!-- Timeline item 6 -->
-                                <div class="relative z-10 opacity-50">
-                                    <!-- Date badge -->
-                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-gray-400 to-gray-500 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold">
-                                        Jun
-                                    </div>
-
-                                    <!-- Content card - right side -->
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                                        <div class="hidden md:block"></div>
-                                        <div class="md:pl-12">
-                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all border border-gray-200/50">
-                                                <h3 class="text-xl font-bold bg-gradient-to-r from-gray-700 to-gray-600 bg-clip-text text-transparent mb-2">Testing & Validation</h3>
-                                                <p class="text-gray-600">Comprehensive testing of the system with real medical data and user feedback.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Timeline item 7 -->
-                                <div class="relative z-10 opacity-50">
-                                    <!-- Date badge -->
-                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-gray-400 to-gray-500 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold">
-                                        Jul
-                                    </div>
-
-                                    <!-- Content card - left side -->
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                                        <div class="md:text-right md:pr-12">
-                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto border border-gray-200/50">
-                                                <h3 class="text-xl font-bold bg-gradient-to-r from-gray-700 to-gray-600 bg-clip-text text-transparent mb-2">Final Implementation</h3>
-                                                <p class="text-gray-600">Deployment of the complete system with all features and optimizations.</p>
-                                            </div>
-                                        </div>
-                                        <div class="hidden md:block"></div>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Content card - left side -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="md:text-right md:pr-12">
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto">
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Topic Assessment</h3>
+                            <p class="text-gray-600">Initial research and problem identification. Team formation and project scope definition.</p>
                         </div>
                     </div>
+                    <div class="hidden md:block"></div>
+                </div>
+            </div>
+
+            <!-- Timeline item 2 - RIGHT SIDE -->
+            <div class="relative z-10">
+                <!-- Date badge -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+    <span>5 July</span>
+    <span class="text-xs font-normal">2024</span>
+    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+            6/100
+        </span>
+</div>
+
+                <!-- Content card - right side -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="hidden md:block"></div>
+                    <div class="md:pl-12">
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all">
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Project Proposal Presentation</h3>
+                            <p class="text-gray-600">Demonstrating the Project Proposal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline item 3 - LEFT SIDE -->
+            <div class="relative z-10">
+                <!-- Date badge -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+    <span>23 Aug</span>
+    <span class="text-xs font-normal">2024</span>
+    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+            6/100
+        </span>
+</div>
+
+                <!-- Content card - left side -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="md:text-right md:pr-12">
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto">
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Proposal Submission</h3>
+                            <p class="text-gray-600">Proposal Draft Submission</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block"></div>
+                </div>
+            </div>
+
+            <!-- Timeline item 4 - RIGHT SIDE -->
+            <div class="relative z-10">
+                <!-- Date badge -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+    <span>5 Dec</span>
+    <span class="text-xs font-normal">2024</span>
+    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+            15/100
+        </span>
+</div>
+
+                <!-- Content card - right side -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="hidden md:block"></div>
+                    <div class="md:pl-12">
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all">
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Progress Presentation</h3>
+                            <p class="text-gray-600">Presenting the 50% Progress of the Solution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <!-- Timeline item 6 - RIGHT SIDE -->
+            <div class="relative z-10">
+                <!-- Date badge -->
+                 <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+    <span>5 Dec</span>
+    <span class="text-xs font-normal">2024</span>
+    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+            1/100
+        </span>
+</div>
+
+                <!-- Content card - right side -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="hidden md:block"></div>
+                    <div class="md:pl-12">
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all">
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent mb-2">Checklist 1</h3>
+                            <p class="text-gray-600">Submitting the Github Repo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- Timeline item 8 - RIGHT SIDE -->
+            <div class="relative z-10">
+                <!-- Date badge -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+    <span>17 Mar</span>
+    <span class="text-xs font-normal">2025</span>
+    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+            1/100
+        </span>
+</div>
+
+                <!-- Content card - right side -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="hidden md:block"></div>
+                    <div class="md:pl-12">
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all border border-green-200/50">
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent mb-2">Checklist 2</h3>
+                            <p class="text-gray-600">Submitting the Demonstration Video</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Timeline item 7 - LEFT SIDE -->
+            <div class="relative z-10">
+                <!-- Date badge -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+    <span>18 Mar</span>
+    <span class="text-xs font-normal">2025</span>
+    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+            18/100
+        </span>
+</div>
+
+                <!-- Content card - left side -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="md:text-right md:pr-12">
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto border border-green-200/50">
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent mb-2">Progress Presentation 2</h3>
+                            <p class="text-gray-600">Demonstrating 90% Completed Project</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block"></div>
+                </div>
+            </div>
+            
+            <div class="relative z-10">
+                <!-- Date badge -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+    <span>20 Mar</span>
+    <span class="text-xs font-normal">2025</span>
+    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+            0/100
+        </span>
+</div>
+
+                <!-- Content card - left side -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="md:text-right md:pr-12">
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto">
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-green-800 to-green-600 bg-clip-text text-transparent mb-2">Research Paper</h3>
+                            <p class="text-gray-600">Submitting the Research Paper</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block"></div>
+                </div>
+            </div>
+
+           
+
+            <!-- Timeline item 9 - LEFT SIDE -->
+            <div class="relative z-10">
+                <!-- Date badge -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-400 to-red-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+    <span>11 Apr</span>
+    <span class="text-xs font-normal">2025</span>
+    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+            20/100
+        </span>
+</div>
+
+                <!-- Content card - left side -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="md:text-right md:pr-12">
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto border border-green-200/50">
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent mb-2">Final Reports</h3>
+                            <p class="text-gray-600">Submitting the Final Reports for Supervisor Evaluation</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block"></div>
+                </div>
+            </div>
+
+            <!-- Timeline item 10 - RIGHT SIDE -->
+            <div class="relative z-10">
+                <!-- Date badge -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-400 to-red-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+    <span>27 May</span>
+    <span class="text-xs font-normal">2025</span>
+    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+            20/100
+        </span>
+</div>
+
+                <!-- Content card - right side -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="hidden md:block"></div>
+                    <div class="md:pl-12">
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all border border-gray-200/50">
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-red-700 to-red-600 bg-clip-text text-transparent mb-2">Final Presentation & Viva</h3>
+                            <p class="text-gray-600">Final Presentation & Viva Session with Finalized Product</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline item 11 - LEFT SIDE -->
+            <div class="relative z-10">
+                <!-- Date badge -->
+                  <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-400 to-red-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+    <span>27 May</span>
+    <span class="text-xs font-normal">2025</span>
+    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+            2/100
+        </span>
+</div>
+
+                <!-- Content card - left side -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="md:text-right md:pr-12">
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto border border-gray-200/50">
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-red-700 to-red-600 bg-clip-text text-transparent mb-2">Static Website Demonstration</h3>
+                            <p class="text-gray-600">Demonstration of Static website with Project details</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block"></div>
+                </div>
+            </div>
+
+            <!-- Timeline item 12 - RIGHT SIDE -->
+            <div class="relative z-10 opacity-50">
+                <!-- Date badge -->
+                  <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-400 to-red-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+    <span>27 May</span>
+    <span class="text-xs font-normal">2025</span>
+    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+            10/100
+        </span>
+</div>
+
+                <!-- Content card - right side -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="hidden md:block"></div>
+                    <div class="md:pl-12">
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all border border-gray-200/50">
+                            <h3 class="text-xl font-bold bg-gradient-to-r from-red-700 to-red-600 bg-clip-text text-transparent mb-2">Research Forum</h3>
+                            <p class="text-gray-600">Forum on Submitted Research Papers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
                 </div>
             </div>
         </section>
