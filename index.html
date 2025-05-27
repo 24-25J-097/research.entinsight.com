@@ -163,33 +163,150 @@
             <div class="absolute inset-0 overflow-hidden">
                 <div class="absolute top-40 left-20 w-72 h-72 bg-blue-200/20 rounded-full blur-3xl"></div>
                 <div class="absolute bottom-20 right-20 w-64 h-64 bg-blue-300/20 rounded-full blur-3xl"></div>
+                <div class="absolute top-1/3 right-1/4 w-48 h-48 bg-blue-400/10 rounded-full blur-3xl animate-pulse"></div>
             </div>
 
             <div class="container mx-auto px-6 relative z-10">
                 <div class="fade-in">
-                    <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent mb-16">
+                    <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-600 bg-clip-text text-transparent mb-16 animate-gradient-text">
                         ENT Domain Overview
                     </h2>
-                    <div class="grid md:grid-cols-2 gap-12 items-center">
-                        <div class="animate-float">
-                            <img
-                                alt="ENT Medical Imaging"
-                                class="rounded-xl shadow-lg hover-scale glow-border"
-                                src="assets/images/ent.png"
-                            />
+
+                    <!-- Main image and introduction -->
+                    <div class="glass-card rounded-xl p-8 hover-glow mb-12 border border-blue-200/30">
+                        <div class="flex items-center mb-6">
+                            <div class="w-14 h-14 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow animate-glow-pulse">
+                                <i class="fas fa-stethoscope text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Ear, Nose & Throat Medicine</h3>
                         </div>
-                        <div class="glass-card rounded-xl p-8 hover-glow">
-                            <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                                Over the past few decades, the healthcare sector has adopted software solutions for managing
-                                patient records and medical imaging, significantly improving diagnostic processes. More
-                                recently, the integration of artificial intelligence (AI) into medical imaging has enhanced
-                                the identification of abnormalities, particularly through deep learning (DL) models.
+
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div class="animate-float">
+                                <img
+                                    alt="ENT Medical Imaging"
+                                    class="rounded-xl shadow-lg hover-scale glow-border"
+                                    src="assets/images/ent.png"
+                                />
+                            </div>
+                            <div>
+                                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                                    Over the past few decades, the healthcare sector has adopted software solutions for managing
+                                    patient records and medical imaging, significantly improving diagnostic processes. More
+                                    recently, the integration of artificial intelligence (AI) into medical imaging has enhanced
+                                    the identification of abnormalities, particularly through deep learning (DL) models.
+                                </p>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    This has opened new possibilities for accurate and efficient diagnostics in various medical
+                                    fields. One such field is the Ear, Nose, and Throat (E.N.T.) domain, which handles a wide
+                                    range of conditions affecting these areas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ENT Specialties -->
+                    <div class="grid md:grid-cols-3 gap-6 mb-12">
+                        <!-- Ear -->
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all hover-lift">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center text-white mr-3 glow">
+                                    <i class="fas fa-assistive-listening-systems text-lg"></i>
+                                </div>
+                                <h4 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Ear</h4>
+                            </div>
+                            <p class="text-gray-700">
+                                Specializes in diagnosing and treating conditions affecting the ear, including hearing loss, ear infections, balance disorders, tinnitus, and congenital disorders.
                             </p>
-                            <p class="text-lg text-gray-700 leading-relaxed">
-                                This has opened new possibilities for accurate and efficient diagnostics in various medical
-                                fields. One such field is the Ear, Nose, and Throat (E.N.T.) domain, which handles a wide
-                                range of conditions affecting these areas.
+                        </div>
+
+                        <!-- Nose -->
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all hover-lift">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center text-white mr-3 glow">
+                                    <i class="fas fa-allergies text-lg"></i>
+                                </div>
+                                <h4 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Nose</h4>
+                            </div>
+                            <p class="text-gray-700">
+                                Focuses on nasal and sinus conditions including sinusitis, allergies, polyps, deviated septum, and other disorders affecting breathing and smell.
                             </p>
+                        </div>
+
+                        <!-- Throat -->
+                        <div class="glass-card rounded-xl p-6 hover-glow transition-all hover-lift">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center text-white mr-3 glow">
+                                    <i class="fas fa-lungs text-lg"></i>
+                                </div>
+                                <h4 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Throat</h4>
+                            </div>
+                            <p class="text-gray-700">
+                                Addresses throat-related issues including voice disorders, swallowing difficulties, tonsillitis, pharyngitis, and detection of foreign objects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- AI in ENT Medicine -->
+                    <div class="glass-card rounded-xl p-8 hover-glow border border-blue-200/30">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-700 to-blue-500 flex items-center justify-center text-white mr-4 glow">
+                                <i class="fas fa-brain text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">AI in ENT Diagnostics</h3>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <p class="text-gray-700 mb-4">
+                                    Artificial Intelligence is revolutionizing ENT diagnostics through:
+                                </p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <div class="w-6 h-6 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-2 mt-1 flex-shrink-0">
+                                            <i class="fas fa-check text-xs"></i>
+                                        </div>
+                                        <p class="text-gray-700">Enhanced image analysis for detecting abnormalities in medical scans</p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-6 h-6 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-2 mt-1 flex-shrink-0">
+                                            <i class="fas fa-check text-xs"></i>
+                                        </div>
+                                        <p class="text-gray-700">Automated classification of ENT conditions with high accuracy</p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-6 h-6 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-2 mt-1 flex-shrink-0">
+                                            <i class="fas fa-check text-xs"></i>
+                                        </div>
+                                        <p class="text-gray-700">Reduced diagnostic time and improved patient outcomes</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 mb-4">
+                                    Deep Learning models are particularly effective for:
+                                </p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <div class="w-6 h-6 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-2 mt-1 flex-shrink-0">
+                                            <i class="fas fa-check text-xs"></i>
+                                        </div>
+                                        <p class="text-gray-700">Analyzing complex patterns in medical images that may be missed by human eyes</p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-6 h-6 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-2 mt-1 flex-shrink-0">
+                                            <i class="fas fa-check text-xs"></i>
+                                        </div>
+                                        <p class="text-gray-700">Providing decision support for clinicians in challenging cases</p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-6 h-6 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-2 mt-1 flex-shrink-0">
+                                            <i class="fas fa-check text-xs"></i>
+                                        </div>
+                                        <p class="text-gray-700">Enabling early detection of conditions for better treatment outcomes</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -211,7 +328,7 @@
                     </h2>
                     <div class="grid md:grid-cols-2 gap-12">
                         <!-- Foreign Objects -->
-                        <div class="glass-card rounded-xl p-8 hover-glow transition-all">
+                        <div class="glass-card rounded-xl p-8 hover-glow transition-all cursor-pointer" id="foreignObjectCard">
                             <div class="flex items-center mb-6">
                                 <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
                                     <i class="fas fa-search text-2xl"></i>
@@ -230,10 +347,15 @@
                             <p class="text-gray-700">
                                 Foreign objects can be identified using lateral neck X-ray radiographs.
                             </p>
+                            <div class="mt-4 text-center">
+                                <span class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium border border-blue-200 hover:bg-blue-200 transition-all">
+                                    <i class="fas fa-eye mr-2"></i> View Types
+                                </span>
+                            </div>
                         </div>
 
                         <!-- Sinusitis -->
-                        <div class="glass-card rounded-xl p-8 hover-glow transition-all">
+                        <div class="glass-card rounded-xl p-8 hover-glow transition-all cursor-pointer" id="sinusitisCard">
                             <div class="flex items-center mb-6">
                                 <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
                                     <i class="fas fa-head-side-mask text-2xl"></i>
@@ -251,10 +373,15 @@
                             <p class="text-gray-700">
                                 It causes headaches, thick nasal mucus, a plugged nose, and facial pain.
                             </p>
+                            <div class="mt-4 text-center">
+                                <span class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium border border-blue-200 hover:bg-blue-200 transition-all">
+                                    <i class="fas fa-eye mr-2"></i> View Severity Levels
+                                </span>
+                            </div>
                         </div>
 
                         <!-- Cholesteatoma -->
-                        <div class="glass-card rounded-xl p-8 hover-glow transition-all">
+                        <div class="glass-card rounded-xl p-8 hover-glow transition-all cursor-pointer" id="cholesteatomaCard">
                             <div class="flex items-center mb-6">
                                 <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
                                     <i class="fas fa-ear-deaf text-2xl"></i>
@@ -274,13 +401,18 @@
                                 Destroys middle ear bones (ossicles) and can grow through the skull base into the brain. Can be
                                 identified using otoscopic images.
                             </p>
+                            <div class="mt-4 text-center">
+                                <span class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium border border-blue-200 hover:bg-blue-200 transition-all">
+                                    <i class="fas fa-eye mr-2"></i> View Stages
+                                </span>
+                            </div>
                         </div>
 
                         <!-- Pharyngitis -->
-                        <div class="glass-card rounded-xl p-8 hover-glow transition-all">
+                        <div class="glass-card rounded-xl p-8 hover-glow transition-all cursor-pointer" id="pharyngitisCard">
                             <div class="flex items-center mb-6">
                                 <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
-                                    <i class="fas fa-throat text-2xl"></i>
+                                    <i class="fas fa-head-side-cough text-2xl"></i>
                                 </div>
                                 <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">Pharyngitis</h3>
                             </div>
@@ -294,6 +426,11 @@
                                 High-resolution images of the throat are obtained to visualize inflammation, redness, and
                                 swelling.
                             </p>
+                            <div class="mt-4 text-center">
+                                <span class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium border border-blue-200 hover:bg-blue-200 transition-all">
+                                    <i class="fas fa-eye mr-2"></i> View Stages
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -600,295 +737,308 @@
                         Timeline Of The Project
                     </h2>
                     <!-- Timeline container -->
-<div class="max-w-4xl mx-auto">
-    <div class="relative">
-        <!-- Vertical timeline line -->
-        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600"></div>
+                    <div class="max-w-4xl mx-auto">
+                        <div class="relative">
+                            <!-- Vertical timeline line -->
+                            <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600"></div>
 
-        <!-- Timeline items -->
-        <div class="space-y-16">
-            <!-- Timeline item 1 - LEFT SIDE -->
-            <div class="relative z-10">
-                <!-- Date badge -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
-    <span>13 May</span>
-    <span class="text-xs font-normal">2024</span>
-    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+                            <!-- Timeline items -->
+                            <div class="space-y-16">
+                                <!-- Timeline item 1 - LEFT SIDE -->
+                                <div class="relative z-10">
+                                    <!-- Date badge -->
+                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+                                        <span>13 May</span>
+                                        <span class="text-xs font-normal">2024</span>
+                                        <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
             0/100
         </span>
-</div>
+                                    </div>
 
-                <!-- Content card - left side -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="md:text-right md:pr-12">
-                        <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto">
-                            <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Topic Assessment</h3>
-                            <p class="text-gray-600">Initial research and problem identification. Team formation and project scope definition.</p>
-                        </div>
-                    </div>
-                    <div class="hidden md:block"></div>
-                </div>
-            </div>
+                                    <!-- Content card - left side -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                        <div class="md:text-right md:pr-12">
+                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto">
+                                                <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">
+                                                    Topic Assessment</h3>
+                                                <p class="text-gray-600">Initial research and problem identification.
+                                                    Team formation and project scope definition.</p>
+                                            </div>
+                                        </div>
+                                        <div class="hidden md:block"></div>
+                                    </div>
+                                </div>
 
-            <!-- Timeline item 2 - RIGHT SIDE -->
-            <div class="relative z-10">
-                <!-- Date badge -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
-    <span>5 July</span>
-    <span class="text-xs font-normal">2024</span>
-    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+                                <!-- Timeline item 2 - RIGHT SIDE -->
+                                <div class="relative z-10">
+                                    <!-- Date badge -->
+                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+                                        <span>5 July</span>
+                                        <span class="text-xs font-normal">2024</span>
+                                        <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
             6/100
         </span>
-</div>
+                                    </div>
 
-                <!-- Content card - right side -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="hidden md:block"></div>
-                    <div class="md:pl-12">
-                        <div class="glass-card rounded-xl p-6 hover-glow transition-all">
-                            <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Project Proposal Presentation</h3>
-                            <p class="text-gray-600">Demonstrating the Project Proposal</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                    <!-- Content card - right side -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                        <div class="hidden md:block"></div>
+                                        <div class="md:pl-12">
+                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all">
+                                                <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">
+                                                    Project Proposal Presentation</h3>
+                                                <p class="text-gray-600">Demonstrating the Project Proposal</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-            <!-- Timeline item 3 - LEFT SIDE -->
-            <div class="relative z-10">
-                <!-- Date badge -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
-    <span>23 Aug</span>
-    <span class="text-xs font-normal">2024</span>
-    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+                                <!-- Timeline item 3 - LEFT SIDE -->
+                                <div class="relative z-10">
+                                    <!-- Date badge -->
+                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+                                        <span>23 Aug</span>
+                                        <span class="text-xs font-normal">2024</span>
+                                        <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
             6/100
         </span>
-</div>
+                                    </div>
 
-                <!-- Content card - left side -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="md:text-right md:pr-12">
-                        <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto">
-                            <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Proposal Submission</h3>
-                            <p class="text-gray-600">Proposal Draft Submission</p>
-                        </div>
-                    </div>
-                    <div class="hidden md:block"></div>
-                </div>
-            </div>
+                                    <!-- Content card - left side -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                        <div class="md:text-right md:pr-12">
+                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto">
+                                                <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">
+                                                    Proposal Submission</h3>
+                                                <p class="text-gray-600">Proposal Draft Submission</p>
+                                            </div>
+                                        </div>
+                                        <div class="hidden md:block"></div>
+                                    </div>
+                                </div>
 
-            <!-- Timeline item 4 - RIGHT SIDE -->
-            <div class="relative z-10">
-                <!-- Date badge -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
-    <span>5 Dec</span>
-    <span class="text-xs font-normal">2024</span>
-    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+                                <!-- Timeline item 4 - RIGHT SIDE -->
+                                <div class="relative z-10">
+                                    <!-- Date badge -->
+                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+                                        <span>5 Dec</span>
+                                        <span class="text-xs font-normal">2024</span>
+                                        <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
             15/100
         </span>
-</div>
+                                    </div>
 
-                <!-- Content card - right side -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="hidden md:block"></div>
-                    <div class="md:pl-12">
-                        <div class="glass-card rounded-xl p-6 hover-glow transition-all">
-                            <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">Progress Presentation</h3>
-                            <p class="text-gray-600">Presenting the 50% Progress of the Solution</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                    <!-- Content card - right side -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                        <div class="hidden md:block"></div>
+                                        <div class="md:pl-12">
+                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all">
+                                                <h3 class="text-xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-2">
+                                                    Progress Presentation</h3>
+                                                <p class="text-gray-600">Presenting the 50% Progress of the Solution</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-            
-
-            <!-- Timeline item 6 - RIGHT SIDE -->
-            <div class="relative z-10">
-                <!-- Date badge -->
-                 <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
-    <span>5 Dec</span>
-    <span class="text-xs font-normal">2024</span>
-    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+                                <!-- Timeline item 5 - LEFT SIDE -->
+                                <div class="relative z-10">
+                                    <!-- Date badge -->
+                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+                                        <span>5 Dec</span>
+                                        <span class="text-xs font-normal">2024</span>
+                                        <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
             1/100
         </span>
-</div>
+                                    </div>
 
-                <!-- Content card - right side -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="hidden md:block"></div>
-                    <div class="md:pl-12">
-                        <div class="glass-card rounded-xl p-6 hover-glow transition-all">
-                            <h3 class="text-xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent mb-2">Checklist 1</h3>
-                            <p class="text-gray-600">Submitting the Github Repo</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           <!-- Timeline item 8 - RIGHT SIDE -->
-            <div class="relative z-10">
-                <!-- Date badge -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
-    <span>17 Mar</span>
-    <span class="text-xs font-normal">2025</span>
-    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+                                    <!-- Content card - left side -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                        <div class="md:text-right md:pr-12">
+                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto">
+                                                <h3 class="text-xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent mb-2">
+                                                    Checklist 1</h3>
+                                                <p class="text-gray-600">Submitting the Github Repo</p>
+                                            </div>
+                                        </div>
+                                        <div class="hidden md:block"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Timeline item 6 - RIGHT SIDE -->
+                                <div class="relative z-10">
+                                    <!-- Date badge -->
+                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+                                        <span>17 Mar</span>
+                                        <span class="text-xs font-normal">2025</span>
+                                        <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
             1/100
         </span>
-</div>
+                                    </div>
 
-                <!-- Content card - right side -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="hidden md:block"></div>
-                    <div class="md:pl-12">
-                        <div class="glass-card rounded-xl p-6 hover-glow transition-all border border-green-200/50">
-                            <h3 class="text-xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent mb-2">Checklist 2</h3>
-                            <p class="text-gray-600">Submitting the Demonstration Video</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+                                    <!-- Content card - right side -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                        <div class="hidden md:block"></div>
+                                        <div class="md:pl-12">
+                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all border border-green-200/50">
+                                                <h3 class="text-xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent mb-2">
+                                                    Checklist 2</h3>
+                                                <p class="text-gray-600">Submitting the Demonstration Video</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-            <!-- Timeline item 7 - LEFT SIDE -->
-            <div class="relative z-10">
-                <!-- Date badge -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
-    <span>18 Mar</span>
-    <span class="text-xs font-normal">2025</span>
-    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+                                <!-- Timeline item 7 - LEFT SIDE -->
+                                <div class="relative z-10">
+                                    <!-- Date badge -->
+                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+                                        <span>18 Mar</span>
+                                        <span class="text-xs font-normal">2025</span>
+                                        <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
             18/100
         </span>
-</div>
+                                    </div>
 
-                <!-- Content card - left side -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="md:text-right md:pr-12">
-                        <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto border border-green-200/50">
-                            <h3 class="text-xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent mb-2">Progress Presentation 2</h3>
-                            <p class="text-gray-600">Demonstrating 90% Completed Project</p>
-                        </div>
-                    </div>
-                    <div class="hidden md:block"></div>
-                </div>
-            </div>
-            
-            <div class="relative z-10">
-                <!-- Date badge -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
-    <span>20 Mar</span>
-    <span class="text-xs font-normal">2025</span>
-    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+                                    <!-- Content card - left side -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                        <div class="md:text-right md:pr-12">
+                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto border border-green-200/50">
+                                                <h3 class="text-xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent mb-2">
+                                                    Progress Presentation 2</h3>
+                                                <p class="text-gray-600">Demonstrating 90% Completed Project</p>
+                                            </div>
+                                        </div>
+                                        <div class="hidden md:block"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Timeline item 8 - RIGHT SIDE -->
+                                <div class="relative z-10">
+                                    <!-- Date badge -->
+                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+                                        <span>20 Mar</span>
+                                        <span class="text-xs font-normal">2025</span>
+                                        <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
             0/100
         </span>
-</div>
+                                    </div>
 
-                <!-- Content card - left side -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="md:text-right md:pr-12">
-                        <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto">
-                            <h3 class="text-xl font-bold bg-gradient-to-r from-green-800 to-green-600 bg-clip-text text-transparent mb-2">Research Paper</h3>
-                            <p class="text-gray-600">Submitting the Research Paper</p>
-                        </div>
-                    </div>
-                    <div class="hidden md:block"></div>
-                </div>
-            </div>
+                                    <!-- Content card - right side -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                        <div class="hidden md:block"></div>
+                                        <div class="md:pl-12">
+                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all">
+                                                <h3 class="text-xl font-bold bg-gradient-to-r from-green-800 to-green-600 bg-clip-text text-transparent mb-2">
+                                                    Research Paper</h3>
+                                                <p class="text-gray-600">Submitting the Research Paper</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-           
-
-            <!-- Timeline item 9 - LEFT SIDE -->
-            <div class="relative z-10">
-                <!-- Date badge -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-400 to-red-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
-    <span>11 Apr</span>
-    <span class="text-xs font-normal">2025</span>
-    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+                                <!-- Timeline item 9 - LEFT SIDE -->
+                                <div class="relative z-10">
+                                    <!-- Date badge -->
+                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-400 to-red-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+                                        <span>11 Apr</span>
+                                        <span class="text-xs font-normal">2025</span>
+                                        <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
             20/100
         </span>
-</div>
+                                    </div>
 
-                <!-- Content card - left side -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="md:text-right md:pr-12">
-                        <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto border border-green-200/50">
-                            <h3 class="text-xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent mb-2">Final Reports</h3>
-                            <p class="text-gray-600">Submitting the Final Reports for Supervisor Evaluation</p>
-                        </div>
-                    </div>
-                    <div class="hidden md:block"></div>
-                </div>
-            </div>
+                                    <!-- Content card - left side -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                        <div class="md:text-right md:pr-12">
+                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto border border-green-200/50">
+                                                <h3 class="text-xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent mb-2">
+                                                    Final Reports</h3>
+                                                <p class="text-gray-600">Submitting the Final Reports for Supervisor
+                                                    Evaluation</p>
+                                            </div>
+                                        </div>
+                                        <div class="hidden md:block"></div>
+                                    </div>
+                                </div>
 
-            <!-- Timeline item 10 - RIGHT SIDE -->
-            <div class="relative z-10">
-                <!-- Date badge -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-400 to-red-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
-    <span>27 May</span>
-    <span class="text-xs font-normal">2025</span>
-    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+                                <!-- Timeline item 10 - RIGHT SIDE -->
+                                <div class="relative z-10">
+                                    <!-- Date badge -->
+                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-400 to-red-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+                                        <span>27 May</span>
+                                        <span class="text-xs font-normal">2025</span>
+                                        <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
             20/100
         </span>
-</div>
+                                    </div>
 
-                <!-- Content card - right side -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="hidden md:block"></div>
-                    <div class="md:pl-12">
-                        <div class="glass-card rounded-xl p-6 hover-glow transition-all border border-gray-200/50">
-                            <h3 class="text-xl font-bold bg-gradient-to-r from-red-700 to-red-600 bg-clip-text text-transparent mb-2">Final Presentation & Viva</h3>
-                            <p class="text-gray-600">Final Presentation & Viva Session with Finalized Product</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                    <!-- Content card - right side -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                        <div class="hidden md:block"></div>
+                                        <div class="md:pl-12">
+                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all border border-gray-200/50">
+                                                <h3 class="text-xl font-bold bg-gradient-to-r from-red-700 to-red-600 bg-clip-text text-transparent mb-2">
+                                                    Final Presentation & Viva</h3>
+                                                <p class="text-gray-600">Final Presentation & Viva Session with
+                                                    Finalized Product</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-            <!-- Timeline item 11 - LEFT SIDE -->
-            <div class="relative z-10">
-                <!-- Date badge -->
-                  <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-400 to-red-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
-    <span>27 May</span>
-    <span class="text-xs font-normal">2025</span>
-    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+                                <!-- Timeline item 11 - LEFT SIDE -->
+                                <div class="relative z-10">
+                                    <!-- Date badge -->
+                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-400 to-red-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+                                        <span>27 May</span>
+                                        <span class="text-xs font-normal">2025</span>
+                                        <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
             2/100
         </span>
-</div>
+                                    </div>
 
-                <!-- Content card - left side -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="md:text-right md:pr-12">
-                        <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto border border-gray-200/50">
-                            <h3 class="text-xl font-bold bg-gradient-to-r from-red-700 to-red-600 bg-clip-text text-transparent mb-2">Static Website Demonstration</h3>
-                            <p class="text-gray-600">Demonstration of Static website with Project details</p>
+                                    <!-- Content card - left side -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                        <div class="md:text-right md:pr-12">
+                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all ml-auto border border-gray-200/50">
+                                                <h3 class="text-xl font-bold bg-gradient-to-r from-red-700 to-red-600 bg-clip-text text-transparent mb-2">
+                                                    Static Website Demonstration</h3>
+                                                <p class="text-gray-600">Demonstration of Static website with Project
+                                                    details</p>
+                                            </div>
+                                        </div>
+                                        <div class="hidden md:block"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Timeline item 12 - RIGHT SIDE -->
+                                <div class="relative z-10 opacity-50">
+                                    <!-- Date badge -->
+                                    <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-400 to-red-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+                                        <span>02 June</span>
+                                        <span class="text-xs font-normal">2025</span>
+                                        <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
+                        10/100
+                    </span>
+                                    </div>
+
+                                    <!-- Content card - right side -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                        <div class="hidden md:block"></div>
+                                        <div class="md:pl-12">
+                                            <div class="glass-card rounded-xl p-6 hover-glow transition-all border border-gray-200/50">
+                                                <h3 class="text-xl font-bold bg-gradient-to-r from-red-700 to-red-600 bg-clip-text text-transparent mb-2">
+                                                    Research Forum</h3>
+                                                <p class="text-gray-600">Forum on Submitted Research Papers</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                    <div class="hidden md:block"></div>
-                </div>
-            </div>
-
-            <!-- Timeline item 12 - RIGHT SIDE -->
-            <div class="relative z-10 opacity-50">
-                <!-- Date badge -->
-                  <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-400 to-red-500 text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
-    <span>27 May</span>
-    <span class="text-xs font-normal">2025</span>
-    <span class="absolute -bottom-6 text-xs font-medium bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full shadow-lg animate-pulse">
-            10/100
-        </span>
-</div>
-
-                <!-- Content card - right side -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="hidden md:block"></div>
-                    <div class="md:pl-12">
-                        <div class="glass-card rounded-xl p-6 hover-glow transition-all border border-gray-200/50">
-                            <h3 class="text-xl font-bold bg-gradient-to-r from-red-700 to-red-600 bg-clip-text text-transparent mb-2">Research Forum</h3>
-                            <p class="text-gray-600">Forum on Submitted Research Papers</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
                 </div>
             </div>
         </section>
@@ -958,7 +1108,7 @@
                                 <a class="flex items-center p-4 glass rounded-lg hover-glow transition-all border border-blue-200/30"
                                    href="https://drive.google.com/drive/folders/165jV1IMC20j0qKIuPvei94onqsjD_R19?usp=sharing">
                                     <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 flex items-center justify-center text-white mr-4">
-                                        <i class="fas fa-presentation text-lg"></i>
+                                        <i class="fas fa-file-powerpoint text-lg"></i>
                                     </div>
                                     <div>
                                         <h4 class="font-semibold text-blue-800">Proposal Presentation</h4>
@@ -968,7 +1118,7 @@
                                 <a class="flex items-center p-4 glass rounded-lg hover-glow transition-all border border-blue-200/30"
                                    href="https://drive.google.com/drive/folders/1atUmklN9DL78ZhlefJRDPjdVJ5tJCeUh?usp=sharing">
                                     <div class="w-10 h-10 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 flex items-center justify-center text-white mr-4">
-                                        <i class="fas fa-presentation text-lg"></i>
+                                        <i class="fas fa-file-powerpoint text-lg"></i>
                                     </div>
                                     <div>
                                         <h4 class="font-semibold text-blue-800">Progress Presentation</h4>
@@ -988,7 +1138,7 @@
                                 <a class="flex items-center p-4 glass rounded-lg hover-glow transition-all border border-blue-200/30"
                                    href="https://drive.google.com/drive/folders/1fSqPTLSFJUul_ic4KP2T_K1lT4kZ8hJD?usp=sharing">
                                     <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center text-white mr-4">
-                                        <i class="fas fa-presentation text-lg"></i>
+                                        <i class="fas fa-file-powerpoint text-lg"></i>
                                     </div>
                                     <div>
                                         <h4 class="font-semibold text-blue-800">Final Presentation</h4>
@@ -1199,7 +1349,7 @@
             </div>
 
             <div class="container mx-auto px-6 relative z-10">
-                <div class="grid md:grid-cols-3 gap-12">
+                <div class="grid md:grid-cols-4 gap-12">
                     <div class="glass-dark rounded-xl p-6 hover-glow">
                         <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent">ENT Insight</h3>
                         <p class="text-blue-100">
@@ -1237,16 +1387,41 @@
                         </div>
                     </div>
                     <div class="glass-dark rounded-xl p-6 hover-glow">
+                        <h4 class="text-lg font-semibold mb-4 text-blue-200">Related Sites</h4>
+                        <div class="space-y-3">
+                            <a class="flex items-center text-blue-100 hover:text-white transition-all" href="https://entinsight.com" target="_blank">
+                                <div class="w-6 h-6 rounded-full bg-blue-700/50 flex items-center justify-center mr-2">
+                                    <i class="fas fa-globe text-xs"></i>
+                                </div>
+                                <span>Software Solution</span>
+                            </a>
+                            <a class="flex items-center text-blue-100 hover:text-white transition-all" href="https://api.entinsight.com" target="_blank">
+                                <div class="w-6 h-6 rounded-full bg-blue-700/50 flex items-center justify-center mr-2">
+                                    <i class="fas fa-server text-xs"></i>
+                                </div>
+                                <span>Developer API</span>
+                            </a>
+                            <a class="flex items-center text-blue-100 hover:text-white transition-all" href="https://ai.entinsight.com" target="_blank">
+                                <div class="w-6 h-6 rounded-full bg-blue-700/50 flex items-center justify-center mr-2">
+                                    <i class="fas fa-brain text-xs"></i>
+                                </div>
+                                <span>AI Hub</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="glass-dark rounded-xl p-6 hover-glow">
                         <h4 class="text-lg font-semibold mb-4 text-blue-200">Connect</h4>
                         <div class="flex space-x-4 mb-6">
                             <a class="w-10 h-10 rounded-full bg-blue-700/50 flex items-center justify-center text-blue-100 hover:bg-blue-600 hover:text-white transition-all" href="#">
                                 <i class="fab fa-linkedin text-xl"></i>
                             </a>
-                            <a class="w-10 h-10 rounded-full bg-blue-700/50 flex items-center justify-center text-blue-100 hover:bg-blue-600 hover:text-white transition-all" href="#">
+                            <a class="w-10 h-10 rounded-full bg-blue-700/50 flex items-center justify-center text-blue-100 hover:bg-blue-600 hover:text-white transition-all" href="https://github.com/24-25J-097" target="_blank">
                                 <i class="fab fa-github text-xl"></i>
                             </a>
-                            <a class="w-10 h-10 rounded-full bg-blue-700/50 flex items-center justify-center text-blue-100 hover:bg-blue-600 hover:text-white transition-all" href="#">
-                                <i class="fas fa-envelope text-xl"></i>
+                            <a class="w-10 h-10 rounded-full bg-blue-700/50 flex items-center justify-center text-blue-100 hover:bg-blue-600 hover:text-white transition-all"
+                               href="mailto:research@entinsight.com?subject=Inquiry%20from%20Website"
+                               target="_blank">
+                               <i class="fas fa-envelope text-xl"></i>
                             </a>
                         </div>
                         <p class="text-blue-200 text-sm">
@@ -1283,6 +1458,105 @@
                     <button class="zoom-btn" id="zoomIn">
                         <i class="fas fa-search-plus"></i>
                     </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Medical Condition Modals -->
+        <!-- Foreign Objects Modal -->
+        <div class="modal-overlay" id="foreignObjectModal">
+            <div class="modal-content glass-card" style="width: 90%; max-width: 800px; padding: 30px;">
+                <button class="close-btn" id="closeForeignObjectModal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-6">Foreign Objects in Throat - Types</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Animal Bone</h4>
+                        <img src="assets/images/foreign-object/foregin o.jpg" alt="Animal Bone Foreign Object" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Animal bones from food are common foreign objects found in the throat area. They can be identified using lateral neck X-ray radiographs.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Biomedical Foreign Object</h4>
+                        <img src="assets/images/foreign-object/forign-bio-medical.JPG" alt="Biomedical Foreign Object" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Biomedical foreign objects such as dental implants or medical devices can sometimes be found in the throat area and require immediate medical attention.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sinusitis Modal -->
+        <div class="modal-overlay" id="sinusitisModal">
+            <div class="modal-content glass-card" style="width: 90%; max-width: 800px; padding: 30px;">
+                <button class="close-btn" id="closeSinusitisModal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-6">Sinusitis - Severity Levels</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Mild</h4>
+                        <img src="assets/images/sinusitis/sinusitis.jpg" alt="Mild Sinusitis" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Mild sinusitis shows minimal inflammation of the sinus tissue with minor symptoms like slight nasal congestion and occasional headaches.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Moderate</h4>
+                        <img src="assets/images/sinusitis/sinusitis-moderate.jpg" alt="Moderate Sinusitis" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Moderate sinusitis presents with more significant inflammation, persistent nasal congestion, facial pain, and thicker nasal discharge.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Severe</h4>
+                        <img src="assets/images/sinusitis/sinusitis-sever.jpg" alt="Severe Sinusitis" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Severe sinusitis shows extensive inflammation, complete blockage of sinus passages, intense facial pain, and potential complications if left untreated.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cholesteatoma Modal -->
+        <div class="modal-overlay" id="cholesteatomaModal">
+            <div class="modal-content glass-card" style="width: 90%; max-width: 800px; padding: 30px;">
+                <button class="close-btn" id="closeCholesteatomaModal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-6">Cholesteatoma - Stages</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Stage 1</h4>
+                        <img src="assets/images/cholesteotoma/cholesteotoma-stage1.jpg" alt="Cholesteatoma Stage 1" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Early stage cholesteatoma with minimal growth of keratinizing squamous epithelium in the middle ear, often causing mild hearing loss.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Stage 2</h4>
+                        <img src="assets/images/cholesteotoma/cholesteotoma-stage2.JPEG" alt="Cholesteatoma Stage 2" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Intermediate stage with more significant growth that may begin to affect the ossicles (middle ear bones), causing moderate hearing loss.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Stage 3</h4>
+                        <img src="assets/images/cholesteotoma/cholesteotoma-stage3.JPEG" alt="Cholesteatoma Stage 3" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Advanced stage with extensive growth that may destroy middle ear bones and potentially grow through the skull base, requiring urgent surgical intervention.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pharyngitis Modal -->
+        <div class="modal-overlay" id="pharyngitisModal">
+            <div class="modal-content glass-card" style="width: 90%; max-width: 800px; padding: 30px;">
+                <button class="close-btn" id="closePharyngitisModal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-6">Pharyngitis - Stages</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Moderate Pharyngitis</h4>
+                        <img src="assets/images/phyrangitis/phyrangitis-moderate.JPG" alt="Moderate Pharyngitis" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Moderate inflammation of the pharynx showing redness and swelling, typically causing sore throat and difficulty swallowing.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Tonsil Pharyngitis</h4>
+                        <img src="assets/images/phyrangitis/phyrangitis-tonsil.JPG" alt="Tonsil Pharyngitis" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Pharyngitis affecting the tonsils, often showing white or yellow spots on the tonsils and causing more severe symptoms including fever and swollen lymph nodes.</p>
+                    </div>
                 </div>
             </div>
         </div>
