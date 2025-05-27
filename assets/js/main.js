@@ -194,4 +194,123 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Medical Condition Modals Functionality
+    // Foreign Objects Modal
+    const foreignObjectCard = document.getElementById('foreignObjectCard');
+    const foreignObjectModal = document.getElementById('foreignObjectModal');
+    const closeForeignObjectModal = document.getElementById('closeForeignObjectModal');
+
+    if (foreignObjectCard && foreignObjectModal) {
+        foreignObjectCard.addEventListener('click', function() {
+            foreignObjectModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        });
+
+        if (closeForeignObjectModal) {
+            closeForeignObjectModal.addEventListener('click', function() {
+                foreignObjectModal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+
+        foreignObjectModal.addEventListener('click', function(e) {
+            if (e.target === foreignObjectModal) {
+                foreignObjectModal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+    }
+
+    // Sinusitis Modal
+    const sinusitisCard = document.getElementById('sinusitisCard');
+    const sinusitisModal = document.getElementById('sinusitisModal');
+    const closeSinusitisModal = document.getElementById('closeSinusitisModal');
+
+    if (sinusitisCard && sinusitisModal) {
+        sinusitisCard.addEventListener('click', function() {
+            sinusitisModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        });
+
+        if (closeSinusitisModal) {
+            closeSinusitisModal.addEventListener('click', function() {
+                sinusitisModal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+
+        sinusitisModal.addEventListener('click', function(e) {
+            if (e.target === sinusitisModal) {
+                sinusitisModal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+    }
+
+    // Cholesteatoma Modal
+    const cholesteatomaCard = document.getElementById('cholesteatomaCard');
+    const cholesteatomaModal = document.getElementById('cholesteatomaModal');
+    const closeCholesteatomaModal = document.getElementById('closeCholesteatomaModal');
+
+    if (cholesteatomaCard && cholesteatomaModal) {
+        cholesteatomaCard.addEventListener('click', function() {
+            cholesteatomaModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        });
+
+        if (closeCholesteatomaModal) {
+            closeCholesteatomaModal.addEventListener('click', function() {
+                cholesteatomaModal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+
+        cholesteatomaModal.addEventListener('click', function(e) {
+            if (e.target === cholesteatomaModal) {
+                cholesteatomaModal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+    }
+
+    // Pharyngitis Modal
+    const pharyngitisCard = document.getElementById('pharyngitisCard');
+    const pharyngitisModal = document.getElementById('pharyngitisModal');
+    const closePharyngitisModal = document.getElementById('closePharyngitisModal');
+
+    if (pharyngitisCard && pharyngitisModal) {
+        pharyngitisCard.addEventListener('click', function() {
+            pharyngitisModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        });
+
+        if (closePharyngitisModal) {
+            closePharyngitisModal.addEventListener('click', function() {
+                pharyngitisModal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+        }
+
+        pharyngitisModal.addEventListener('click', function(e) {
+            if (e.target === pharyngitisModal) {
+                pharyngitisModal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+    }
+
+    // Handle Escape key for all modals
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            // Close all medical condition modals
+            const allModals = [foreignObjectModal, sinusitisModal, cholesteatomaModal, pharyngitisModal];
+            allModals.forEach(modal => {
+                if (modal && modal.classList.contains('active')) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = ''; // Restore scrolling
+                }
+            });
+        }
+    });
 });
