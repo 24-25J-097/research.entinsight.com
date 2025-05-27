@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
             // Close all medical condition modals
-            const allModals = [foreignObjectModal, sinusitisModal, cholesteatomaModal, pharyngitisModal];
+            const allModals = [foreignObjectModal, sinusitisModal, cholesteatomaModal, pharyngitisModal, galleryModal];
             allModals.forEach(modal => {
                 if (modal && modal.classList.contains('active')) {
                     modal.classList.remove('active');
@@ -313,4 +313,111 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
+
+    // Field Visits Gallery Modal Functionality
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const galleryModal = document.getElementById('galleryModal');
+    const closeGalleryModal = document.getElementById('closeModal');
+    const galleryModalImage = document.getElementById('modalImage');
+    const galleryZoomIn = document.getElementById('zoomIn');
+    const galleryZoomOut = document.getElementById('zoomOut');
+
+    let galleryCurrentZoom = 1;
+    const galleryZoomStep = 0.2;
+    const galleryMaxZoom = 3;
+    const galleryMinZoom = 0.5;
+
+    // Open modal when gallery item is clicked
+    if (galleryItems.length > 0) {
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const imgSrc = this.querySelector('img').src;
+                galleryModalImage.src = imgSrc;
+                galleryModal.classList.add('active');
+                galleryCurrentZoom = 1;
+                updateGalleryZoom();
+                document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+            });
+        });
+    }
+
+    // Close modal when close button is clicked
+    if (closeGalleryModal) {
+        closeGalleryModal.addEventListener('click', function() {
+            galleryModal.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        });
+    }
+
+    // Close modal when clicking outside the image
+    if (galleryModal) {
+        galleryModal.addEventListener('click', function(e) {
+            if (e.target === galleryModal) {
+                galleryModal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+    }
+
+    // Zoom in button
+    if (galleryZoomIn) {
+        galleryZoomIn.addEventListener('click', function() {
+            if (galleryCurrentZoom < galleryMaxZoom) {
+                galleryCurrentZoom += galleryZoomStep;
+                updateGalleryZoom();
+            }
+        });
+    }
+
+    // Zoom out button
+    if (galleryZoomOut) {
+        galleryZoomOut.addEventListener('click', function() {
+            if (galleryCurrentZoom > galleryMinZoom) {
+                galleryCurrentZoom -= galleryZoomStep;
+                updateGalleryZoom();
+            }
+        });
+    }
+
+    // Update zoom level
+    function updateGalleryZoom() {
+        if (galleryModalImage) {
+            galleryModalImage.style.transform = `scale(${galleryCurrentZoom})`;
+        }
+    }
+
+    // Handle keyboard events for gallery modal
+    document.addEventListener('keydown', function(e) {
+        if (galleryModal && galleryModal.classList.contains('active')) {
+            if (e.key === '+' || e.key === '=') {
+                if (galleryCurrentZoom < galleryMaxZoom) {
+                    galleryCurrentZoom += galleryZoomStep;
+                    updateGalleryZoom();
+                }
+            } else if (e.key === '-' || e.key === '_') {
+                if (galleryCurrentZoom > galleryMinZoom) {
+                    galleryCurrentZoom -= galleryZoomStep;
+                    updateGalleryZoom();
+                }
+            }
+        }
+    });
+
+    // Handle mouse wheel for zooming in gallery modal
+    if (galleryModal) {
+        galleryModal.addEventListener('wheel', function(e) {
+            if (galleryModal.classList.contains('active')) {
+                e.preventDefault();
+                if (e.deltaY < 0 && galleryCurrentZoom < galleryMaxZoom) {
+                    // Zoom in
+                    galleryCurrentZoom += galleryZoomStep;
+                    updateGalleryZoom();
+                } else if (e.deltaY > 0 && galleryCurrentZoom > galleryMinZoom) {
+                    // Zoom out
+                    galleryCurrentZoom -= galleryZoomStep;
+                    updateGalleryZoom();
+                }
+            }
+        });
+    }
 });
