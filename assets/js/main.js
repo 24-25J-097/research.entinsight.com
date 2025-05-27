@@ -317,10 +317,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Field Visits Gallery Modal Functionality
     const galleryItems = document.querySelectorAll('.gallery-item');
     const galleryModal = document.getElementById('galleryModal');
-    const closeGalleryModal = document.getElementById('closeModal');
-    const galleryModalImage = document.getElementById('modalImage');
-    const galleryZoomIn = document.getElementById('zoomIn');
-    const galleryZoomOut = document.getElementById('zoomOut');
+    const closeGalleryModal = document.getElementById('closeGalleryModal');
+    const galleryModalImage = document.getElementById('galleryModalImage');
+    const galleryZoomIn = document.getElementById('galleryZoomIn');
+    const galleryZoomOut = document.getElementById('galleryZoomOut');
 
     let galleryCurrentZoom = 1;
     const galleryZoomStep = 0.2;
