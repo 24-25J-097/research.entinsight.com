@@ -328,7 +328,7 @@
                     </h2>
                     <div class="grid md:grid-cols-2 gap-12">
                         <!-- Foreign Objects -->
-                        <div class="glass-card rounded-xl p-8 hover-glow transition-all">
+                        <div class="glass-card rounded-xl p-8 hover-glow transition-all cursor-pointer" id="foreignObjectCard">
                             <div class="flex items-center mb-6">
                                 <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
                                     <i class="fas fa-search text-2xl"></i>
@@ -347,10 +347,15 @@
                             <p class="text-gray-700">
                                 Foreign objects can be identified using lateral neck X-ray radiographs.
                             </p>
+                            <div class="mt-4 text-center">
+                                <span class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium border border-blue-200 hover:bg-blue-200 transition-all">
+                                    <i class="fas fa-eye mr-2"></i> View Types
+                                </span>
+                            </div>
                         </div>
 
                         <!-- Sinusitis -->
-                        <div class="glass-card rounded-xl p-8 hover-glow transition-all">
+                        <div class="glass-card rounded-xl p-8 hover-glow transition-all cursor-pointer" id="sinusitisCard">
                             <div class="flex items-center mb-6">
                                 <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
                                     <i class="fas fa-head-side-mask text-2xl"></i>
@@ -368,10 +373,15 @@
                             <p class="text-gray-700">
                                 It causes headaches, thick nasal mucus, a plugged nose, and facial pain.
                             </p>
+                            <div class="mt-4 text-center">
+                                <span class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium border border-blue-200 hover:bg-blue-200 transition-all">
+                                    <i class="fas fa-eye mr-2"></i> View Severity Levels
+                                </span>
+                            </div>
                         </div>
 
                         <!-- Cholesteatoma -->
-                        <div class="glass-card rounded-xl p-8 hover-glow transition-all">
+                        <div class="glass-card rounded-xl p-8 hover-glow transition-all cursor-pointer" id="cholesteatomaCard">
                             <div class="flex items-center mb-6">
                                 <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
                                     <i class="fas fa-ear-deaf text-2xl"></i>
@@ -391,10 +401,15 @@
                                 Destroys middle ear bones (ossicles) and can grow through the skull base into the brain. Can be
                                 identified using otoscopic images.
                             </p>
+                            <div class="mt-4 text-center">
+                                <span class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium border border-blue-200 hover:bg-blue-200 transition-all">
+                                    <i class="fas fa-eye mr-2"></i> View Stages
+                                </span>
+                            </div>
                         </div>
 
                         <!-- Pharyngitis -->
-                        <div class="glass-card rounded-xl p-8 hover-glow transition-all">
+                        <div class="glass-card rounded-xl p-8 hover-glow transition-all cursor-pointer" id="pharyngitisCard">
                             <div class="flex items-center mb-6">
                                 <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-4 glow">
                                     <i class="fas fa-head-side-cough text-2xl"></i>
@@ -411,6 +426,11 @@
                                 High-resolution images of the throat are obtained to visualize inflammation, redness, and
                                 swelling.
                             </p>
+                            <div class="mt-4 text-center">
+                                <span class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium border border-blue-200 hover:bg-blue-200 transition-all">
+                                    <i class="fas fa-eye mr-2"></i> View Stages
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1319,7 +1339,7 @@
             </div>
 
             <div class="container mx-auto px-6 relative z-10">
-                <div class="grid md:grid-cols-3 gap-12">
+                <div class="grid md:grid-cols-4 gap-12">
                     <div class="glass-dark rounded-xl p-6 hover-glow">
                         <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent">ENT Insight</h3>
                         <p class="text-blue-100">
@@ -1357,16 +1377,41 @@
                         </div>
                     </div>
                     <div class="glass-dark rounded-xl p-6 hover-glow">
+                        <h4 class="text-lg font-semibold mb-4 text-blue-200">Related Sites</h4>
+                        <div class="space-y-3">
+                            <a class="flex items-center text-blue-100 hover:text-white transition-all" href="https://entinsight.com" target="_blank">
+                                <div class="w-6 h-6 rounded-full bg-blue-700/50 flex items-center justify-center mr-2">
+                                    <i class="fas fa-globe text-xs"></i>
+                                </div>
+                                <span>Software Solution</span>
+                            </a>
+                            <a class="flex items-center text-blue-100 hover:text-white transition-all" href="https://api.entinsight.com" target="_blank">
+                                <div class="w-6 h-6 rounded-full bg-blue-700/50 flex items-center justify-center mr-2">
+                                    <i class="fas fa-server text-xs"></i>
+                                </div>
+                                <span>Developer API</span>
+                            </a>
+                            <a class="flex items-center text-blue-100 hover:text-white transition-all" href="https://ai.entinsight.com" target="_blank">
+                                <div class="w-6 h-6 rounded-full bg-blue-700/50 flex items-center justify-center mr-2">
+                                    <i class="fas fa-brain text-xs"></i>
+                                </div>
+                                <span>AI Hub</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="glass-dark rounded-xl p-6 hover-glow">
                         <h4 class="text-lg font-semibold mb-4 text-blue-200">Connect</h4>
                         <div class="flex space-x-4 mb-6">
                             <a class="w-10 h-10 rounded-full bg-blue-700/50 flex items-center justify-center text-blue-100 hover:bg-blue-600 hover:text-white transition-all" href="#">
                                 <i class="fab fa-linkedin text-xl"></i>
                             </a>
-                            <a class="w-10 h-10 rounded-full bg-blue-700/50 flex items-center justify-center text-blue-100 hover:bg-blue-600 hover:text-white transition-all" href="#">
+                            <a class="w-10 h-10 rounded-full bg-blue-700/50 flex items-center justify-center text-blue-100 hover:bg-blue-600 hover:text-white transition-all" href="https://github.com/24-25J-097" target="_blank">
                                 <i class="fab fa-github text-xl"></i>
                             </a>
-                            <a class="w-10 h-10 rounded-full bg-blue-700/50 flex items-center justify-center text-blue-100 hover:bg-blue-600 hover:text-white transition-all" href="#">
-                                <i class="fas fa-envelope text-xl"></i>
+                            <a class="w-10 h-10 rounded-full bg-blue-700/50 flex items-center justify-center text-blue-100 hover:bg-blue-600 hover:text-white transition-all"
+                               href="mailto:research@entinsight.com?subject=Inquiry%20from%20Website"
+                               target="_blank">
+                               <i class="fas fa-envelope text-xl"></i>
                             </a>
                         </div>
                         <p class="text-blue-200 text-sm">
@@ -1403,6 +1448,105 @@
                     <button class="zoom-btn" id="zoomIn">
                         <i class="fas fa-search-plus"></i>
                     </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Medical Condition Modals -->
+        <!-- Foreign Objects Modal -->
+        <div class="modal-overlay" id="foreignObjectModal">
+            <div class="modal-content glass-card" style="width: 90%; max-width: 800px; padding: 30px;">
+                <button class="close-btn" id="closeForeignObjectModal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-6">Foreign Objects in Throat - Types</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Animal Bone</h4>
+                        <img src="assets/images/foreign-object/foregin o.jpg" alt="Animal Bone Foreign Object" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Animal bones from food are common foreign objects found in the throat area. They can be identified using lateral neck X-ray radiographs.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Biomedical Foreign Object</h4>
+                        <img src="assets/images/foreign-object/forign-bio-medical.JPG" alt="Biomedical Foreign Object" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Biomedical foreign objects such as dental implants or medical devices can sometimes be found in the throat area and require immediate medical attention.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sinusitis Modal -->
+        <div class="modal-overlay" id="sinusitisModal">
+            <div class="modal-content glass-card" style="width: 90%; max-width: 800px; padding: 30px;">
+                <button class="close-btn" id="closeSinusitisModal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-6">Sinusitis - Severity Levels</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Mild</h4>
+                        <img src="assets/images/sinusitis/sinusitis.jpg" alt="Mild Sinusitis" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Mild sinusitis shows minimal inflammation of the sinus tissue with minor symptoms like slight nasal congestion and occasional headaches.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Moderate</h4>
+                        <img src="assets/images/sinusitis/sinusitis-moderate.jpg" alt="Moderate Sinusitis" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Moderate sinusitis presents with more significant inflammation, persistent nasal congestion, facial pain, and thicker nasal discharge.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Severe</h4>
+                        <img src="assets/images/sinusitis/sinusitis-sever.jpg" alt="Severe Sinusitis" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Severe sinusitis shows extensive inflammation, complete blockage of sinus passages, intense facial pain, and potential complications if left untreated.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cholesteatoma Modal -->
+        <div class="modal-overlay" id="cholesteatomaModal">
+            <div class="modal-content glass-card" style="width: 90%; max-width: 800px; padding: 30px;">
+                <button class="close-btn" id="closeCholesteatomaModal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-6">Cholesteatoma - Stages</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Stage 1</h4>
+                        <img src="assets/images/cholesteotoma/cholesteotoma-stage1.jpg" alt="Cholesteatoma Stage 1" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Early stage cholesteatoma with minimal growth of keratinizing squamous epithelium in the middle ear, often causing mild hearing loss.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Stage 2</h4>
+                        <img src="assets/images/cholesteotoma/cholesteotoma-stage2.JPEG" alt="Cholesteatoma Stage 2" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Intermediate stage with more significant growth that may begin to affect the ossicles (middle ear bones), causing moderate hearing loss.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Stage 3</h4>
+                        <img src="assets/images/cholesteotoma/cholesteotoma-stage3.JPEG" alt="Cholesteatoma Stage 3" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Advanced stage with extensive growth that may destroy middle ear bones and potentially grow through the skull base, requiring urgent surgical intervention.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pharyngitis Modal -->
+        <div class="modal-overlay" id="pharyngitisModal">
+            <div class="modal-content glass-card" style="width: 90%; max-width: 800px; padding: 30px;">
+                <button class="close-btn" id="closePharyngitisModal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-6">Pharyngitis - Stages</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Moderate Pharyngitis</h4>
+                        <img src="assets/images/phyrangitis/phyrangitis-moderate.JPG" alt="Moderate Pharyngitis" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Moderate inflammation of the pharynx showing redness and swelling, typically causing sore throat and difficulty swallowing.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 hover-glow transition-all">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">Tonsil Pharyngitis</h4>
+                        <img src="assets/images/phyrangitis/phyrangitis-tonsil.JPG" alt="Tonsil Pharyngitis" class="rounded-xl mb-4 w-full h-auto shadow-lg">
+                        <p class="text-gray-700">Pharyngitis affecting the tonsils, often showing white or yellow spots on the tonsils and causing more severe symptoms including fever and swollen lymph nodes.</p>
+                    </div>
                 </div>
             </div>
         </div>
