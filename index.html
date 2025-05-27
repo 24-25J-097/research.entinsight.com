@@ -22,6 +22,18 @@
         </script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- Preload critical hero background image -->
+        <link rel="preload" href="assets/images/hero_bg.png" as="image" fetchpriority="high">
+
+        <!-- Critical CSS for hero background image - inline for faster first paint -->
+        <style>
+            .hero-bg-image {
+                background-image: url('assets/images/hero_bg.png');
+                will-change: transform;
+                transform: translateZ(0);
+                backface-visibility: hidden;
+            }
+        </style>
     </head>
     <body class="bg-white text-gray-800">
         <!-- Navigation -->
@@ -34,28 +46,28 @@
                         </a>
                     </div>
                     <div class="hidden md:flex space-x-8">
-                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#home">
+                        <a class="text-gray-700 font-medium hover:text-medical-blue transition-colors" href="#home">
                             Home
                         </a>
-                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#domain">
+                        <a class="text-gray-700 font-medium hover:text-medical-blue transition-colors" href="#domain">
                             Domain
                         </a>
-                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#research">
+                        <a class="text-gray-700 font-medium hover:text-medical-blue transition-colors" href="#research">
                             Research
                         </a>
-                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#methodology">
+                        <a class="text-gray-700 font-medium hover:text-medical-blue transition-colors" href="#methodology">
                             Methodology
                         </a>
-                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#milestones">
+                        <a class="text-gray-700 font-medium hover:text-medical-blue transition-colors" href="#milestones">
                             Milestones
                         </a>
-                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#timeline">
+                        <a class="text-gray-700 font-medium hover:text-medical-blue transition-colors" href="#timeline">
                             Timeline
                         </a>
-                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#team">
+                        <a class="text-gray-700 font-medium hover:text-medical-blue transition-colors" href="#team">
                             Team
                         </a>
-                        <a class="text-gray-700 hover:text-medical-blue transition-colors" href="#contact">
+                        <a class="text-gray-700 font-medium hover:text-medical-blue transition-colors" href="#contact">
                             Contact
                         </a>
                     </div>
@@ -102,7 +114,7 @@
         <section class="pt-20 min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 flex items-center relative overflow-hidden" id="home">
             <!-- Background image with low opacity -->
             <div class="absolute inset-0 overflow-hidden">
-                <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('assets/images/hero_bg.png');"></div>
+                <div class="absolute inset-0 bg-cover bg-center opacity-10 hero-bg-image"></div>
                 <div class="absolute -top-40 -right-40 w-80 h-80 bg-blue-200/30 rounded-full blur-3xl"></div>
                 <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-300/20 rounded-full blur-3xl"></div>
             </div>
