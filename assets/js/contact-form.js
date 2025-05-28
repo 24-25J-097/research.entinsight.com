@@ -4,11 +4,11 @@
     'use strict';
 
     // Variables
-    var form = null;
-    var nameField = null;
-    var emailField = null;
-    var messageField = null;
-    var submitBtn = null;
+    let form = null;
+    let nameField = null;
+    let emailField = null;
+    let messageField = null;
+    let submitBtn = null;
 
     // Initialize when DOM is ready
     document.addEventListener('DOMContentLoaded', function () {
@@ -64,14 +64,14 @@
         event.preventDefault();
 
         if (validateAllFields()) {
-            submitForm();
+            submitForm().then();
         }
     }
 
     function validateAllFields() {
-        var isNameValid = validateField(nameField, 'name');
-        var isEmailValid = validateField(emailField, 'email');
-        var isMessageValid = validateField(messageField, 'message');
+        const isNameValid = validateField(nameField, 'name');
+        const isEmailValid = validateField(emailField, 'email');
+        const isMessageValid = validateField(messageField, 'message');
 
         return isNameValid && isEmailValid && isMessageValid;
     }
@@ -79,9 +79,9 @@
     function validateField(field, type) {
         if (!field) return false;
 
-        var value = field.value.trim();
-        var isValid = true;
-        var errorMessage = '';
+        const value = field.value.trim();
+        let isValid = true;
+        let errorMessage = '';
 
         switch (type) {
             case 'name':
@@ -95,7 +95,7 @@
                 break;
 
             case 'email':
-                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!value) {
                     errorMessage = 'Email is required';
                     isValid = false;
@@ -133,12 +133,12 @@
         // Remove existing error message
         removeErrorMessage(field);
 
-        // Create error message element
-        var errorDiv = document.createElement('div');
+        // Create an error message element
+        const errorDiv = document.createElement('div');
         errorDiv.className = 'error-message text-red-500 text-sm mt-1';
         errorDiv.textContent = message;
 
-        // Add error message after the field
+        // Add an error message after the field
         field.parentNode.appendChild(errorDiv);
     }
 
@@ -155,56 +155,54 @@
     }
 
     function removeErrorMessage(field) {
-        var existingError = field.parentNode.querySelector('.error-message');
+        const existingError = field.parentNode.querySelector('.error-message');
         if (existingError) {
             existingError.parentNode.removeChild(existingError);
         }
     }
 
-    function submitForm() {
+    async function submitForm() {
         setLoadingState(true);
 
-        var formData = {
+        const formData = {
             name: nameField.value.trim(),
             email: emailField.value.trim(),
             message: messageField.value.trim(),
-            timestamp: new Date().toISOString()
+            submissionTime: new Date().toISOString(),
+            ipAddress: await getUserIP(),
+            domain: window.location.hostname || "localhost",
         };
 
-        // Simulate API call
-        setTimeout(function () {
-            // Simulate success (90% of the time)
-            if (Math.random() > 0.1) {
-                console.log('Form data would be sent:', formData);
-                showSuccessNotification();
-                resetForm();
-            } else {
-                showErrorNotification('Failed to send message. Please try again.');
-            }
-            setLoadingState(false);
-        }, 2000);
-
-        // For real API integration, replace above with:
-        /*
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', '/api/contact', true);
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'http://localhost:5000/api/public/notification/contact-us', true);
         xhr.setRequestHeader('Content-Type', 'application/json');
 
-        xhr.onreadystatechange = function() {
+        xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                 setLoadingState(false);
                 if (xhr.status === 200) {
                     showSuccessNotification();
                     resetForm();
                 } else {
-                    showErrorNotification('Failed to send message. Please try again.');
+                    try {
+                        const response = JSON.parse(xhr.responseText);
+                        const errorMessage = response?.error || 'Failed to send a message. Please try again.';
+                        showErrorNotification(errorMessage);
+                    } catch (parseErr) {
+                        showErrorNotification('Unexpected error occurred.');
+                    }
                 }
             }
         };
 
+        xhr.onerror = function () {
+            setLoadingState(false);
+            showErrorNotification('Network error occurred. Please check your connection.');
+        };
+
         xhr.send(JSON.stringify(formData));
-        */
     }
+
 
     function setLoadingState(loading) {
         if (!submitBtn) return;
@@ -227,9 +225,9 @@
     }
 
     function showNotification(message, type) {
-        var notification = document.createElement('div');
-        var bgColor = type === 'success' ? 'bg-green-500' : 'bg-red-500';
-        var icon = type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle';
+        const notification = document.createElement('div');
+        const bgColor = type === 'success' ? 'bg-green-500' : 'bg-red-500';
+        const icon = type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle';
 
         notification.className = 'fixed top-4 right-4 ' + bgColor + ' text-white px-6 py-4 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300';
         notification.innerHTML = '<div class="flex items-center"><i class="fas ' + icon + ' mr-3"></i><span>' + message + '</span></div>';
@@ -257,12 +255,22 @@
             form.reset();
 
             // Clear validation styling
-            var fields = [nameField, emailField, messageField];
-            for (var i = 0; i < fields.length; i++) {
+            const fields = [nameField, emailField, messageField];
+            for (let i = 0; i < fields.length; i++) {
                 if (fields[i]) {
                     clearFieldError(fields[i]);
                 }
             }
+        }
+    }
+
+    async function getUserIP() {
+        try {
+            const response = await fetch('https://api.ipify.org?format=json');
+            const data = await response.json();
+            return data.ip; // user's public IP
+        } catch (error) {
+            return 'unknown'; // fallback if API fails
         }
     }
 
