@@ -401,6 +401,14 @@ html {
     transform: translateY(-5px);
 }
 
+/* Hero Background Image Optimization */
+.hero-bg-image {
+    background-image: url('../images/hero_bg.png');
+    will-change: transform;
+    transform: translateZ(0); /* Force GPU acceleration */
+    backface-visibility: hidden; /* Reduce paint during animations */
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .glass-card, .glass {
