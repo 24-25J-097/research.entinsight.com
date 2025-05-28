@@ -174,7 +174,7 @@
         };
 
         const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'http://localhost:5000/api/public/notification/contact-us', true);
+        xhr.open('POST', 'https://api.entinsight.com/api/public/notification/contact-us', true);
         xhr.setRequestHeader('Content-Type', 'application/json');
 
         xhr.onreadystatechange = function () {
